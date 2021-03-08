@@ -1,0 +1,27 @@
+.a{
+	background-color: #EEEEEE;
+	height:  200px;
+
+}
+.a>h1{
+	padding-top: 50px;
+
+}
+
+.c{
+	    -webkit-animation: .175s linear infinite spinner-grow;
+    animation: 1.75s linear infinite spinner-grow;
+}
+.b>form{
+	
+	text-align: right;
+}
+.X{
+	padding-left: 328px;
+}
+.Y{
+	padding-left: 300px;
+}
+.Z{
+	padding-left: 328px;
+}

@@ -1,0 +1,4 @@
+database named : test_project 
+‘php artisan migrate:fresh’ to migrate the database table
+‘php artisan serve’ 
+Your project will be run on 127.0.0.1:8000 url. Let it run on that cmd tab. 
