@@ -5,10 +5,10 @@
 A background review of the state of the art in the relevant field
 As more and more students aim to pursue higher education in their respective fields, a growing number of them are planning to attend universities abroad. This is the combined result of the blurring international boundaries, advancement in information technology as well as the economic prosperity that the country achieved significantly in the last decade
 
-### The problem addressed in the project:**
+### The problem addressed in the project:
 For a majority of us, studying at a reputable university abroad is the imminent goal. While planning to study abroad, most of us don’t know what to look for and where, and can’t decide accordingly on their next moves. Not all applicants will be successful in their very first attempt. Some might get admitted, but no scholarship. Some will face visa issues. Thus, it is important for one to remember that it is a lengthy process and starting the process sooner will result in a greater chance of success. While applications often have multiple stage deadlines, early applications are often considered more for scholarships and funding than late ones. As there are no such websites where we can find all information together so maximum applicants submit incomplete information and get rejection for several times 
 
-### Objective of the proposed projects:**
+### Objective of the proposed projects:
 As increasing number of students plan to go abroad for studies, there remains numerous questions-the answers which could pave the way to a better and informed decision. Our aim to create a website “Study Abroad Guide” which will include all related information at one place and to decrease the hassle of the students. Our website will provide the information of:
 
 -	University list (Canada and Australia as of now)
