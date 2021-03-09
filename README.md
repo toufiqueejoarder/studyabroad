@@ -1,6 +1,6 @@
 # Project Title: EduHelp – A higher study help portal
 
-<h> 1.	Introduction </h>
+<h1> 1.	Introduction </h1>
 
 A background review of the state of the art in the relevant field
 As more and more students aim to pursue higher education in their respective fields, a growing number of them are planning to attend universities abroad. This is the combined result of the blurring international boundaries, advancement in information technology as well as the economic prosperity that the country achieved significantly in the last decade
