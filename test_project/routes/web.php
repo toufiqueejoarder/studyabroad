@@ -57,3 +57,15 @@ Route::get('/discipline-list',[App\Http\Controllers\AdminController::class, 'dis
 Route::get('/delete-university/{id}', [App\Http\Controllers\AdminController::class,'deleteUni'])->middleware('admin');
 Route::get('/view-university-details/{id}', [App\Http\Controllers\AdminController::class, 'viewUni'])->middleware('admin');
 
+Route::get('/search-master-degree', function () {
+    return view('VisitByDiscipline');
+});
+Route::get('/countries', function () {
+    return view('viewByCountry');
+});
+Route::get('/disciplines', function () {
+    return view('VisitByDiscipline');
+});
+Route::get('/studies', function () {
+    return view('studiesDetails');
+});

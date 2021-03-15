@@ -45,17 +45,12 @@
             callback: function(){ var event = new CustomEvent(this.eventName);
                 document.dispatchEvent(event); this.isLoaded = true; }, /** * Event subscriber for the onload event of Fupcah. * * This function subscribes a specified callback to Fupcah. This * function will be called as soon as Fupcah is marked as loaded. * * @param {Function} callback * @return void */ onload: function(callback){ if(this.isLoaded){ callback(); } else{ document.addEventListener(this.eventName, callback); } } }; Fupcah.init(); </script> <!-- Mark the time at which the page loaded --> <script type="text/javascript"> if(window && window.performance && window.performance.mark){ performance.mark('page_load_start_mark'); }
     </script>
+    <script src="{{ asset('js/script.js') }}" defer></script>
     <!-- Shortcut icons --> <!-- Shortcut icons -->
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="//monet-prtl-co.imgix.net/Shared/Favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="//monet-prtl-co.imgix.net/Shared/Favicons/favicon-16x16.png" sizes="16x16">
+
     <!-- Apple touch icons -->
-    <link href="//monet-prtl-co.imgix.net/Shared/TouchIcons/apple-touch-icon.png" rel="apple-touch-icon" />
-    <link href="//monet-prtl-co.imgix.net/Shared/TouchIcons/apple-touch-icon-76x76.png" rel="apple-touch-icon" />
-    <link href="//monet-prtl-co.imgix.net/Shared/TouchIcons/apple-touch-icon-120x120.png" rel="apple-touch-icon" />
-    <link href="//monet-prtl-co.imgix.net/Shared/TouchIcons/apple-touch-icon-152x152.png" rel="apple-touch-icon" />
-    <link href="//monet-prtl-co.imgix.net/Shared/TouchIcons/apple-touch-icon-192x192.png" rel="apple-touch-icon" />
-    <link href="//monet-prtl-co.imgix.net/Shared/TouchIcons/apple-touch-icon-512x512.png" rel="apple-touch-icon" />
+
     <!-- Theme color -->
     <meta name="theme-color" content="#247BA0">
     <!-- Mobile viewport -->
@@ -74,6 +69,14 @@
     <title>Find Masters Worldwide: all MBA, MSc., MA, LLM, MPhil and other postgraduate programmes - MastersPortal.com</title>
     <link rel="stylesheet" href="https://www.mastersportal.com/dist/master/shared.2b3058c0fcc31b15d920.css">
     <link rel="stylesheet" href="https://www.mastersportal.com/dist/master/42099b4af021e53fd8fd4e056c2568d7c2e3ffa8.503b5c642e5b92a6af17.css">
+    <script> $('.panel-collapse').on('show.bs.collapse', function () {
+            $(this).siblings('.panel-heading').addClass('active');
+        });
+
+        $('.panel-collapse').on('hide.bs.collapse', function () {
+            $(this).siblings('.panel-heading').removeClass('active');
+        });</script>
+    <link rel="stylesheet" href="{{asset('css/styles.css')}}">
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -310,12 +313,12 @@
                                     <div class="SectionContent SectionContentDecide" data-menu-section="decide">
                                         <div class="SectionContentColumn SectionContentColumnFullWidth">
                                             <div class="SubSectionContentTitle">Tools to help you decide</div>
-                                            <a href="/articles/2426/how-to-use-our-best-fit-tool" class="SubSectionCtaButton" title="Best Fit">
+                                            <a href="https://www.mastersportal.com/articles/2426/how-to-use-our-best-fit-tool.html" class="SubSectionCtaButton" title="Best Fit">
                                                 <i class="lnr-clipboard-check SubSectionCtaIcon"></i>
                                                 <span class="SubSectionCtaTitle">Best Fit</span>
                                                 <span class="SubSectionCtaDescription">Check your budget and academic fit with your study of choice</span>
                                             </a>
-                                            <a href="/articles/2649/how-student-reviews-can-help-you-find-the-best-university-for-you-in-2021" class="SubSectionCtaButton" title="Student Reviews">
+                                            <a href="https://www.mastersportal.com/articles/2649/how-student-reviews-can-help-you-find-the-best-university-for-you-in-2021.html" class="SubSectionCtaButton" title="Student Reviews">
                                                 <i class="lnr-reviews SubSectionCtaIcon"></i>
                                                 <span class="SubSectionCtaTitle">Student Reviews</span>
                                                 <span class="SubSectionCtaDescription">What are students saying about your chosen universities?</span>
@@ -327,28 +330,28 @@
                                             </div>
                                             <ul class="SubSectionContentList SubSectionContentListTwoColumns">
                                                 <li class="SubSectionContentItem">
-                                                    <a class="ContentItemLink js-ContentItemLink" href="/ranking-country/1/netherlands"> Netherlands </a>
+                                                    <a class="ContentItemLink js-ContentItemLink" href="https://www.mastersportal.com/ranking-country/1/netherlands.html"> Netherlands </a>
                                                 </li>
                                                 <li class="SubSectionContentItem">
-                                                    <a class="ContentItemLink js-ContentItemLink" href="/ranking-country/10/france"> France </a>
+                                                    <a class="ContentItemLink js-ContentItemLink" href="https://www.mastersportal.com/ranking-country/10/france.html"> France </a>
                                                 </li>
                                                 <li class="SubSectionContentItem">
-                                                    <a class="ContentItemLink js-ContentItemLink" href="/ranking-country/11/germany"> Germany </a>
+                                                    <a class="ContentItemLink js-ContentItemLink" href="https://www.mastersportal.com/ranking-country/11/germany.html"> Germany </a>
                                                 </li>
                                                 <li class="SubSectionContentItem">
-                                                    <a class="ContentItemLink js-ContentItemLink" href="/ranking-country/19/norway"> Norway </a>
+                                                    <a class="ContentItemLink js-ContentItemLink" href="https://www.mastersportal.com/ranking-country/19/norway.html"> Norway </a>
                                                 </li>
                                                 <li class="SubSectionContentItem">
-                                                    <a class="ContentItemLink js-ContentItemLink" href="/ranking-country/30/united-kingdom"> United Kingdom </a>
+                                                    <a class="ContentItemLink js-ContentItemLink" href="https://www.mastersportal.com/ranking-country/30/united-kingdom.html"> United Kingdom </a>
                                                 </li>
                                                 <li class="SubSectionContentItem">
-                                                    <a class="ContentItemLink js-ContentItemLink" href="/ranking-country/56/canada"> Canada </a>
+                                                    <a class="ContentItemLink js-ContentItemLink" href="https://www.mastersportal.com/ranking-country/56/canada.html"> Canada </a>
                                                 </li>
                                                 <li class="SubSectionContentItem">
-                                                    <a class="ContentItemLink js-ContentItemLink" href="/ranking-country/82/united-states"> United States </a>
+                                                    <a class="ContentItemLink js-ContentItemLink" href="https://www.mastersportal.com/ranking-country/82/united-states.html"> United States </a>
                                                 </li>
                                                 <li class="SubSectionContentItem">
-                                                    <a class="ContentItemLink js-ContentItemLink" href="/ranking-country/202/australia"> Australia </a>
+                                                    <a class="ContentItemLink js-ContentItemLink" href="https://www.mastersportal.com/ranking-country/202/australia.html"> Australia </a>
                                                 </li>
                                             </ul>
                                         </section>
@@ -364,27 +367,27 @@
                                             <div class="SubSectionContentTitle">Tips to apply</div>
                                             <ul class="SubSectionContentList">
                                                 <li class="SubSectionContentItem">
-                                                    <a class="ContentItemLink js-ContentItemLink" href="/articles/379/what-is-a-transcript-of-records-and-when-do-students-need-one" title="What Is a Transcript of Records and When Do Students Need One?">
+                                                    <a class="ContentItemLink js-ContentItemLink" href="https://www.mastersportal.com/articles/379/what-is-a-transcript-of-records-and-when-do-students-need-one.html" title="What Is a Transcript of Records and When Do Students Need One?">
                                                         What Is a Transcript of Records and When Do Students Need One?
                                                     </a>
                                                 </li>
                                                 <li class="SubSectionContentItem">
-                                                    <a class="ContentItemLink js-ContentItemLink" href="/articles/406/write-a-successful-motivation-letter-for-your-masters" title="Write a Successful Motivation Letter for Your Master's">
+                                                    <a class="ContentItemLink js-ContentItemLink" href="https://www.mastersportal.com/articles/406/write-a-successful-motivation-letter-for-your-masters.html" title="Write a Successful Motivation Letter for Your Master's">
                                                         Write a Successful Motivation Letter for Your Master's
                                                     </a>
                                                 </li>
                                                 <li class="SubSectionContentItem">
-                                                    <a class="ContentItemLink js-ContentItemLink" href="/articles/1941/how-to-apply-to-universities-worldwide-and-tips-for-being-accepted-in-2021" title="How to Apply to Universities Worldwide and Tips for Being Accepted in 2021">
+                                                    <a class="ContentItemLink js-ContentItemLink" href="https://www.mastersportal.com/articles/1941/how-to-apply-to-universities-worldwide-and-tips-for-being-accepted-in-2021.html" title="How to Apply to Universities Worldwide and Tips for Being Accepted in 2021">
                                                         How to Apply to Universities Worldwide and Tips for Being Accepted in 2021
                                                     </a>
                                                 </li>
                                                 <li class="SubSectionContentItem">
-                                                    <a class="ContentItemLink js-ContentItemLink" href="/articles/2589/what-documents-do-you-need-to-apply-for-a-university-abroad" title="What Documents Do You Need to Apply for a University Abroad?">
+                                                    <a class="ContentItemLink js-ContentItemLink" href="https://www.mastersportal.com/articles/2589/what-documents-do-you-need-to-apply-for-a-university-abroad.html" title="What Documents Do You Need to Apply for a University Abroad?">
                                                         What Documents Do You Need to Apply for a University Abroad?
                                                     </a>
                                                 </li>
                                                 <li class="SubSectionContentItem">
-                                                    <a class="ContentItemLink js-ContentItemLink" href="/articles/2626/6-steps-to-writing-an-awesome-cv-for-your-masters-degree-application" title="6 Steps to Writing an Awesome CV for your Master’s Degree Application">
+                                                    <a class="ContentItemLink js-ContentItemLink" href="https://www.mastersportal.com/articles/2626/6-steps-to-writing-an-awesome-cv-for-your-masters-degree-application.html" title="6 Steps to Writing an Awesome CV for your Master’s Degree Application">
                                                         6 Steps to Writing an Awesome CV for your Master’s Degree Application
                                                     </a>
                                                 </li>
@@ -401,7 +404,7 @@
                     <div class="HeaderSearch">
                         <div data-module="" class="Module StudyPortals_Shared_Modules_HeaderSearch_HeaderSearch">
                             <div id="HeaderSearch">
-                                <form method="get" action="" class="Form" id="SearchForm">
+                                <form method="get" action="https://www.mastersportal.com/search/" class="Form" id="SearchForm">
                                     <div class="InputWrapper">
                                         <input id="What" type="text" value="" name="discipline" class="Keywords AutoCompleteInput" placeholder="What do you want to study?" autocomplete="off" data-type="what" data-order="1" >
                                     </div>
@@ -459,16 +462,16 @@
                                 </button> <div id="LoggedInDropDown" class="AccountDropDown">
                                     <ul class="Content">
                                         <li data-clickable="clickable" class="js-menuItem RecommendationsCTA">
-                                            <a title="My recommendations" class="MenuItem" href="/account/?section=recommendations"> Check personalised recommendations </a>
+                                            <a title="My recommendations" class="MenuItem" href="https://www.mastersportal.com/account/?section=recommendations"> Check personalised recommendations </a>
                                         </li>
                                         <li data-clickable="clickable" class="js-menuItem">
-                                            <a title="My account page" class="MenuItem" href="/account/#tab:decide"> My profile </a>
+                                            <a title="My account page" class="MenuItem" href="https://www.mastersportal.com/account/#tab:decide"> My profile </a>
                                         </li>
                                         <li data-clickable="clickable" class="js-menuItem">
-                                            <a title="My settings page" class="MenuItem" href="/account/settings/"> My settings </a>
+                                            <a title="My settings page" class="MenuItem" href="https://www.mastersportal.com/account/settings/"> My settings </a>
                                         </li>
                                         <li>
-                                            <button id="signOutLink" class="HelperButton MenuItem" data-href="/" data-ga-tracking='{"category":"Profile","action":"SignOut","event":"click"}' >
+                                            <button id="signOutLink" class="HelperButton MenuItem" data-href="https://www.mastersportal.com/" data-ga-tracking='{"category":"Profile","action":"SignOut","event":"click"}' >
                                                 Sign out
                                             </button>
                                         </li>
@@ -487,602 +490,9 @@
             </div>
         </div>
     </header>
-    <div id="HomeSearchBackground">
-        <section id="SecondRow" class="col1 wrapped">
-            <div class="colblock no-vertical-margin">
-                <div data-module="" class="Module StudyPortals_Shared_Modules_HomeSearchRR_HomeSearch">
-                    <section id="HomeSearch"> <div class="HeadingTextWrapper">
-                            <div class="HeadingTextBottom">
-                                <h1 class="DegreeType"> Discover thousands of  Master's degrees  worldwide! </h1>
-                                <h2 class="HeadingMainTitle js-MainTitle">
-                                    <!-- Inline JS to avoid screen flashing if waiting for DOM Ready -->
-                                    <script type="text/javascript">
-                                        var titlePermutations = [ 'Never stop learning', 'Explore all your opportunities', 'Accept the challenge', 'Find your dream study' ]; document.write(titlePermutations[Math.floor(Math.random() * titlePermutations.length)]); </script>
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="FormWrapper">
-                            <form id="HomeSearchForm" name="HomeSearch" method="get" action="" class="Form">
-                                <label for="HomeWhat" class="Hidden">Type what do you want to study</label>
-                                <div class="InputWrapper">
-                                    <input id="HomeWhat" type="text" value="" name="discipline" class="Keywords AutoCompleteInput" placeholder="What do you want to study?" autocomplete="off" data-type="what" data-order="1" autofocus >
-                                </div>
-                                <label for="HomeWhere" class="Hidden">Type where do you want to study</label>
-                                <div class="InputWrapper DesktopOnlyBlock"> <input id="HomeWhere" type="text" value="" name="location" class="Keywords AutoCompleteInput" placeholder="Where? (country, organisation)" autocomplete="off" data-type="where" data-order="2" >
-                                </div>
-                                <button type="submit">
-                                    <i class="lnr-magnifier SearchIcon"></i>
-                                    <span class="DesktopOnlyBlock">Search</span>
-                                </button>
-                            </form>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="WhiteBackgroundPane">
-        <section class="col1 wrapped">
-            <div class="colblock">
-                <div data-module="Onboarding:OnboardingBar" class="Module StudyPortals_Shared_Modules_Onboarding_OnboardingBar_OnboardingBar">
-                    <section id="OnboardingBar">
-                        <ul class="OnboardingList">
-                            <li class="OnboardingItem Explore">
-                                <div class="OnboardingBullet">
-                                    <i class="OnboardingIcon lnr-compass2"></i>
-                                </div>
-                                <div class="OnboardingText">
-                                    <p>
-                                        <span class="ItemHeader">Explore</span>
-                                        You can browse more than 71.000 Master’s programmes from all over the world.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="OnboardingItem Compare">
-                                <div class="OnboardingBullet">
-                                    <i class="OnboardingIcon lnr-compare"></i>
-                                </div>
-                                <div class="OnboardingText">
-                                    <p> <span class="ItemHeader">Compare</span> Make a wishlist of your favourite programmes, check your fit with them, and read what other students are saying. </p>
-                                </div>
-                            </li>
-                            <li class="OnboardingItem Decide">
-                                <div class="OnboardingBullet">
-                                    <i class="OnboardingIcon lnr-archery"></i>
-                                </div>
-                                <div class="OnboardingText">
-                                    <p> <span class="ItemHeader">Decide</span> Now that you have your top programmes shortlisted, you can pick the ones that fit you the best. </p>
-                                </div>
-                            </li>
-                            <li class="OnboardingItem Apply">
-                                <div class="OnboardingBullet">
-                                    <i class="OnboardingIcon icon-magic-wand">
-                                        <svg class="ApplySVG IconImg" viewBox="0 0 64 63" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <defs>
-                                                <path d="M63.52 11.056a1.43 1.43 0 0 0-1.518-.256L7.282 34.011a1.45 1.45 0 0 0-.88 1.393c.023.604.414 1.13.983 1.32l16.295 5.472v16.362a1.449 1.449 0 0 0 1.44 1.45c.425 0 .839-.19 1.118-.536l7.958-9.866L47.148 62.49a1.433 1.433 0 0 0 2.393-.622l14.4-49.322a1.459 1.459 0 0 0-.422-1.49zM52.853 17.83L24.848 39.53 11.922 35.19l40.932-17.363v.002zM26.56 41.866l27.115-21.012-20.72 25.689-.001.002-6.396 7.928V41.865l.002.001zm20.898 16.859L36.021 47.346l23.133-28.685-11.696 40.062v.002z" id="plane"/>
-                                                <path d="M13.752 21.844c-.58 0-1.05-.469-1.05-1.048a3.152 3.152 0 0 0-3.151-3.144 1.049 1.049 0 1 1 0-2.097 3.152 3.152 0 0 0 3.15-3.144c0-.58.47-1.048 1.05-1.048.581 0 1.051.469 1.051 1.048a3.152 3.152 0 0 0 3.15 3.144 1.049 1.049 0 1 1 0 2.097 3.152 3.152 0 0 0-3.15 3.144c0 .58-.47 1.048-1.05 1.048zm-1.053-5.24c.399.298.753.653 1.054 1.05.3-.398.655-.752 1.054-1.05a5.335 5.335 0 0 1-1.054-1.051c-.3.398-.655.752-1.054 1.05z" fill="#FDAC10" id="star1"/>
-                                                <path d="M24.156 14.674c-.58 0-1.05-.47-1.05-1.048 0-2.89-2.356-5.24-5.252-5.24a1.049 1.049 0 1 1 0-2.097c2.896 0 5.252-2.35 5.252-5.24 0-.58.47-1.049 1.05-1.049.58 0 1.05.469 1.05 1.048 0 2.89 2.355 5.24 5.251 5.24a1.049 1.049 0 1 1 0 2.097c-2.896 0-5.25 2.35-5.25 5.24 0 .58-.47 1.049-1.051 1.049zm-2.518-7.337a7.398 7.398 0 0 1 2.518 2.513 7.398 7.398 0 0 1 2.518-2.513 7.398 7.398 0 0 1-2.518-2.513 7.398 7.398 0 0 1-2.518 2.513z" fill="#FDAC10" id="star2"/>
-                                                <path d="M5.352 12.244c-.58 0-1.05-.469-1.05-1.048A3.152 3.152 0 0 0 1.15 8.052a1.049 1.049 0 1 1 0-2.097A3.152 3.152 0 0 0 4.3 2.811c0-.58.47-1.048 1.05-1.048.581 0 1.051.469 1.051 1.048a3.152 3.152 0 0 0 3.15 3.144 1.049 1.049 0 1 1 0 2.097 3.152 3.152 0 0 0-3.15 3.144c0 .58-.47 1.048-1.05 1.048zm-1.053-5.24c.399.298.753.653 1.054 1.05.3-.398.655-.752 1.054-1.05a5.335 5.335 0 0 1-1.054-1.051c-.3.398-.655.752-1.054 1.05z" fill="#FDAC10" id="star3"/>
-                                            </defs>
-                                            <use fill="#444" xlink:href="#plane"/>
-                                            <use fill="#FDAC10" xlink:href="#star1" id="Star1"/>
-                                            <use fill="#FDAC10" xlink:href="#star2" id="Star2"/>
-                                            <use fill="#FDAC10" xlink:href="#star3" id="Star3"/>
-                                        </svg>
-                                    </i>
-                                </div>
-                                <div class="OnboardingText">
-                                    <p> <span class="ItemHeader">Apply</span> When you feel confident about your programme choice, you can apply. </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="WhiteBackgroundPane">
-        <section class="col1 wrapped">
-            <div class="colblock">
-                <div data-module="" class="Module StudyPortals_Shared_Modules_Discipline_Spotlight_Spotlight">
-                    <section id="DisciplineSpotlight">
-                        <h2> Browse by Discipline </h2>
-                        <ul>
-                            <li data-clickable="clickable">
-                                <a href="/disciplines" title="Agriculture &amp; Forestry">
-                                    <i class="lnr-tree DisciplineIcons"></i> Agriculture &amp; Forestry
-                                </a>
-                            </li>
-                            <li data-clickable="clickable">
-                                <a href="/discipline" title="Applied Sciences &amp; Professions">
-                                    <i class="lnr-microscope DisciplineIcons"></i> Applied Sciences &amp; Professions
-                                </a>
-                            </li>
-                            <li data-clickable="clickable">
-                                <a href="/disciplines" title="Arts, Design &amp; Architecture">
-                                    <i class="lnr-magic-wand DisciplineIcons"></i> Arts, Design &amp; Architecture
-                                </a>
-                            </li>
-                            <li data-clickable="clickable">
-                                <a href="/disciplines" title="Business &amp; Management">
-                                    <i class="lnr-briefcase DisciplineIcons"></i> Business &amp; Management
-                                </a>
-                            </li>
-                            <li data-clickable="clickable">
-                                <a href="/disciplines" title="Computer Science &amp; IT">
-                                    <i class="lnr-cli DisciplineIcons"></i> Computer Science &amp; IT
-                                </a>
-                            </li>
-                            <li data-clickable="clickable">
-                                <a href="/disciplines" title="Education &amp; Training">
-                                    <i class="lnr-book2 DisciplineIcons"></i> Education &amp; Training
-                                </a>
-                            </li>
-                            <li data-clickable="clickable">
-                                <a href="/disciplines" title="Engineering &amp; Technology">
-                                    <i class="lnr-rulers DisciplineIcons"></i> Engineering &amp; Technology
-                                </a>
-                            </li>
-                            <li data-clickable="clickable">
-                                <a href="/disciplines" title="Environmental Studies &amp; Earth Sciences">
-                                    <i class="lnr-earth DisciplineIcons"></i> Environmental Studies &amp; Earth Sciences
-                                </a>
-                            </li>
-                            <li data-clickable="clickable"> <a href="/disciplines" title="Hospitality, Leisure &amp; Sports">
-                                    <i class="lnr-boat DisciplineIcons"></i> Hospitality, Leisure &amp; Sports
-                                </a>
-                            </li>
-                            <li data-clickable="clickable">
-                                <a href="/disciplines" title="Humanities">
-                                    <i class="lnr-pen2 DisciplineIcons"></i> Humanities
-                                </a>
-                            </li>
-                            <li data-clickable="clickable">
-                                <a href="/disciplines" title="Journalism &amp; Media">
-                                    <i class="lnr-camera DisciplineIcons"></i> Journalism &amp; Media
-                                </a>
-                            </li>
-                            <li data-clickable="clickable">
-                                <a href="/disciplines" title="Law">
-                                    <i class="lnr-balance DisciplineIcons"></i> Law
-                                </a>
-                            </li>
-                            <li data-clickable="clickable">
-                                <a href="/disciplines" title="Medicine &amp; Health">
-                                    <i class="lnr-first-aid DisciplineIcons"></i> Medicine &amp; Health
-                                </a>
-                            </li>
-                            <li data-clickable="clickable">
-                                <a href="/disciplines" title="Natural Sciences &amp; Mathematics">
-                                    <i class="lnr-beaker DisciplineIcons"></i> Natural Sciences &amp; Mathematics
-                                </a>
-                            </li>
-                            <li data-clickable="clickable">
-                                <a href="/disciplines" title="Social Sciences">
-                                    <i class="lnr-bubbles DisciplineIcons"></i> Social Sciences
-                                </a>
-                            </li>
-                        </ul>
-                        <a class="ShowMoreDisciplines HelperButton js-showMoreDisciplines" data-expanded="Show less disciplines" data-condensed="Show all disciplines" title="Show all disciplines" > Show all disciplines
-                        </a>
-                    </section>
-                </div>
-                <div data-module="" class="Module StudyPortals_Shared_Modules_PersonalityTest_PersonalityTest">
-                    <aside id="PersonalityTest" class="HideOnLogin">
-                        <img class="Logo" src="//monet-prtl-co.imgix.net/Shared/studyportals_icon_white.svg" alt="Studyportals">
-                        <p>  Find out which Master's programmes match your personality!  </p>
-                        <a href="/personality-test/" data-ga-tracking='{"category":"Profile","action":"Register Incentive Click","label":"Personality Test Click"}' title="Take a Free Personality Test!" class="NavigatorButton TakeTest" > Take a free test!</a>
-                    </aside>
-                </div>
-            </div>
-        </section>
-    </div>
-    <section id="SuperBanner" class="col1 wrapped no-vertical-padding">
-        <div class="colblock no-vertical-margin">
-            <div id="show-banners" class="BannerPlaceHolder" data-id="master_standard_homepage" data-x="4" data-y="1"></div>
-        </div>
-    </section>
-    <div class="WhiteBackgroundPane">
-        <section class="col1 wrapped">
-            <div class="colblock">
-                <div data-module="" class="Module StudyPortals_Shared_Modules_CountrySpotlightRR_CountrySpotlightRR">
-                    <div id="CountrySpotlight">
-                        <h2>Where to study abroad?</h2>
-                        <div id="CountrySpotlightContainer">
-                            <figure data-clickable="clickable">
-                                <a href="/countries" title="Netherlands">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/mp/fce406d2.jpg" data-title="Netherlands" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/mp/fce406d2.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/mp/fce406d2.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/mp/fce406d2.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/mp/fce406d2.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/mp/fce406d2.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Netherlands" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Netherlands </span>
-                                    <div class="Toggle"> Study abroad in the Netherlands (also known as Holland), the first non-English-speaking
-                                        country to offer Bachelor’s and Master’s degrees taught in English. International
-                                        students in the Netherlands love the country because of its tolerant and
-                                        inclusive policies. Choose to study in the Netherlands at some of the best
-                                        universities and colleges in Europe.
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/countries" title="Czech Republic">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/endor/countries/7/images/1603188237_canva_aerial-view-of-concrete-bridge-and-buildings-surrounded-by-trees.jpg" data-title="Czech Republic" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/endor/countries/7/images/1603188237_canva_aerial-view-of-concrete-bridge-and-buildings-surrounded-by-trees.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/endor/countries/7/images/1603188237_canva_aerial-view-of-concrete-bridge-and-buildings-surrounded-by-trees.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/endor/countries/7/images/1603188237_canva_aerial-view-of-concrete-bridge-and-buildings-surrounded-by-trees.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/endor/countries/7/images/1603188237_canva_aerial-view-of-concrete-bridge-and-buildings-surrounded-by-trees.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/endor/countries/7/images/1603188237_canva_aerial-view-of-concrete-bridge-and-buildings-surrounded-by-trees.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Czech Republic" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Czech Republic </span>
-                                    <div class="Toggle"> Czech Republic is the country with the highest human development in Central and Eastern Europe and has ranked as the third most peaceful country in Europe. Member of the European Union since 2004, the Czech Republic has the Czech koruna as a currency and the beautiful city of Prague as capital. </div>
-                                </figcaption>
-                            </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/countries" title="Finland">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/mp/fa950397.jpg" data-title="Finland" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/mp/fa950397.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/mp/fa950397.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/mp/fa950397.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/mp/fa950397.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40"> <img src="//storage-prtl-co.imgix.net/mp/fa950397.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Finland" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Finland </span>
-                                    <div class="Toggle"> Study in Finland, the country in northern Europe who has figured out how to provide some of the
-                                        best education in the world. Study abroad in Finland, a transparent open civic
-                                        society, where education is always a priority. Not to mention you can also find
-                                        inexpensive or tuition-free degrees to study in Finland. </div>
-                                </figcaption>
-                            </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/countries" title="Ireland">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/mp/79230930.jpg" data-title="Ireland" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/mp/79230930.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/mp/79230930.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/mp/79230930.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/mp/79230930.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/mp/79230930.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Ireland" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Ireland </span>
-                                    <div class="Toggle"> Study abroad in Ireland, the place where literature meets beautiful landscape, innovation and
-                                        a welcoming international climate. By studying in Ireland, you will enjoy the most
-                                        welcoming countries in the world and benefit from lots of opportunities in
-                                        education and research.
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/countries" title="Norway">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/mp/5ca0a6d4.jpg" data-title="Norway" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/mp/5ca0a6d4.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/mp/5ca0a6d4.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/mp/5ca0a6d4.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/mp/5ca0a6d4.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/mp/5ca0a6d4.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Norway" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Norway </span>
-                                    <div class="Toggle"> Study abroad in Norway, the country that is consistently ranked by the UN as having the highest
-                                        standard of living in the world based largely on average levels of education
-                                        and income. Higher studies in Norway are some of the best in Europe. International
-                                        students have plenty of English-taught degrees to choose from at universities and
-                                        colleges in Norway. </div>
-                                </figcaption>
-                            </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/countries" title="Poland">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/mp/0b5078c3.jpg" data-title="Poland" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/mp/0b5078c3.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/mp/0b5078c3.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/mp/0b5078c3.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/mp/0b5078c3.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/mp/0b5078c3.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Poland" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Poland </span>
-                                    <div class="Toggle"> Studying in Poland will provide a solid education which will thoroughly prepare you for work in the most advanced labour markets of the world, at the same time stimulating your own personal development. You will also have the unique opportunity of meeting outstanding specialists and renowned intellectuals in your chosen field.
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/countries" title="Sweden">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/endor/countries/26/images/1511346224_sweden%20cover%20image.jpg" data-title="Sweden" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/endor/countries/26/images/1511346224_sweden%20cover%20image.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/endor/countries/26/images/1511346224_sweden%20cover%20image.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/endor/countries/26/images/1511346224_sweden%20cover%20image.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/endor/countries/26/images/1511346224_sweden%20cover%20image.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/endor/countries/26/images/1511346224_sweden%20cover%20image.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Sweden" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Sweden </span>
-                                    <div class="Toggle"> Study in Sweden to learn how to conduct top-quality research and develop independent thinking.
-                                        People who study abroad in Sweden benefit from integration in a multicultural
-                                        society and rigorous Bachelor’s and Master’s degrees at universities and
-                                        colleges that look towards the future.
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/countries" title="Switzerland">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/endor/countries/27/images/1511346964_Switzerland.jpg" data-title="Switzerland" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/endor/countries/27/images/1511346964_Switzerland.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/endor/countries/27/images/1511346964_Switzerland.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/endor/countries/27/images/1511346964_Switzerland.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/endor/countries/27/images/1511346964_Switzerland.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/endor/countries/27/images/1511346964_Switzerland.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Switzerland" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Switzerland </span>
-                                    <div class="Toggle"> Study abroad in Switzerland is a federal Republic in western Europe with one of the highest
-                                        standards of living. You can study in Switzerland in English even if the
-                                        country has four official languages: German (predominant), French, Italian and
-                                        Romansh. Switzerland is well known for its quality postgraduate studies, but
-                                        you can also find great Bachelor’s and Master’s degree options.
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/countries" title="United Kingdom">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/mp/d3369e27.jpg" data-title="United Kingdom" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/mp/d3369e27.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/mp/d3369e27.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/mp/d3369e27.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/mp/d3369e27.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/mp/d3369e27.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="United Kingdom" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> United Kingdom </span>
-                                    <div class="Toggle"> Study in the UK and feel like you have entered a modern-day fairy tale. Universities and
-                                        colleges in the UK - as well as the outstanding facilities they provide - are
-                                        mesmerizing for international students. All the modern universities in the
-                                        United Kingdom enable you to engage in ground-breaking research, regardless if
-                                        you study in Britain, Scotland, Wales or Northern Ireland.
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/countries" title="Canada">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/endor/countries/56/images/1546950707_Canada.jpg" data-title="Canada" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/endor/countries/56/images/1546950707_Canada.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/endor/countries/56/images/1546950707_Canada.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/endor/countries/56/images/1546950707_Canada.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/endor/countries/56/images/1546950707_Canada.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/endor/countries/56/images/1546950707_Canada.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Canada" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Canada </span>
-                                    <div class="Toggle"> Study in Canada
-                                        - one of the strongest economies in the world. By studying abroad in Canada,
-                                        you will enjoy a high standard of living, as well as top-level education at
-                                        Canadian universities and colleges. The best universities in Canada provide
-                                        great degrees and are some of the most welcoming to international students.
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/countries" title="United States">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/mp/70588891.jpg" data-title="United States" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/mp/70588891.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/mp/70588891.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/mp/70588891.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/mp/70588891.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/mp/70588891.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="United States" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> United States </span>
-                                    <div class="Toggle"> Study in the
-                                        U.S.A, home to some of the most prestigious universities and colleges. The
-                                        United States is internationally renowned for top business schools, medical
-                                        schools and engineering schools. International students in the U.S. can select
-                                        from a huge variety of Bachelor’s and Master’s degrees offered by some of the
-                                        best universities in the world.
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/countries" title="Israel">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/endor/countries/112/images/1584971992_cover.jpg" data-title="Israel" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/endor/countries/112/images/1584971992_cover.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/endor/countries/112/images/1584971992_cover.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/endor/countries/112/images/1584971992_cover.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/endor/countries/112/images/1584971992_cover.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/endor/countries/112/images/1584971992_cover.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Israel" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Israel </span>
-                                    <div class="Toggle"> Study abroad
-                                        in Israel and explore iconic sites for European and Middle-Eastern culture.
-                                        Universities and study centres in Israel offer international students
-                                        English-taught Bachelor’s and Master’s degrees. Study in Israel, also known as
-                                        the “Start-Up Nation”, with
-                                        the world’s highest investment per capita in start-up companies. Israel was
-                                        ranked the 3rd most innovative country in the world.
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="ViewAll">
-                            <a href="https://www.mastersportal.com/countries/" title="View all countries">View all countries</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="WhiteBackgroundPane">
-        <section class="col1 wrapped">
-            <div class="colblock">
-                <div data-module="" class="Module StudyPortals_Shared_Modules_CountryTest_CountryTest">
-                    <aside id="CountryTest" class="HideOnLogin">
-                        <div class="ModuleWrapper">
-                            <img class="Logo" src="//monet-prtl-co.imgix.net/Shared/studyportals_icon_white.svg" alt="Studyportals" loading="lazy" >
-                            <p> Find out which country would be the best fit for a student like you! </p>
-                            <a href="/country-test/" data-ga-tracking='{"category":"Profile","action":"Register Incentive Click","label":"Country Test Click"}' title="Take a Free Country Test!" target="_blank" class="NavigatorButton TakeTest" > Take a free test! </a>
-                        </div>
-                    </aside>
-                </div>
-            </div>
-        </section>
-    </div>
-    <section class="col1 wrapped BannerPaneContainer">
-        <div class="colblock">
-            <div class="MultipleTopVisibilityBannersWrapper">
-            </div>
-            <!-- TODO: GAM migration; remove MpuBanner afterwards. -->
-            <div data-module="" class="Module StudyPortals_Shared_Modules_Banner_Banner StudyPortals_Shared_Modules_Banner_MpuBanner StudyPortals_Shared_Modules_Banner_HomeMpuBanner">
-                <div class="BannerPlaceHolder Empty" data-size="mpu" data-id="master_mpu_homepage" data-slot-width="300px" data-slot-height="250px" data-calculate-slots="true"  data-no-styling="true"  >
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="WhiteBackgroundPane">
-        <section class="col1 wrapped">
-            <div class="colblock">
-                <div data-module="" class="Module StudyPortals_Shared_Modules_FavouriteQuotes_FavouriteQuotes">
-                    <aside id="FavouriteQuotes">
-                        <h2>What Students are Saying About Studyportals</h2>
-                        <div class="TopDecoration">
-                            <i class="lnr-quote-open QuoteIcon"></i>
-                        </div>
-                        <ul class="Quotes">
-                            <li class="Quote">
-                                <div class="Author">
-                                    <img class="AuthorImage" src="//monet-prtl-co.imgix.net/Academic/reviewer-Luna.jpg?h=80&auto=format,compress&q=40" alt="Luna" width="80" height="80" loading="lazy" >
-                                    <div class="AuthorDetails">
-                                        <span class="AuthorName">Luna</span> <span class="AuthorCountry">Brazil</span>
-                                    </div>
-                                </div>
-                                <blockquote>I have used it to find my programme and I know how much it can help students in making the right decision.
-                                    Even now that I am already registered, I still use Studyportals to find summer programmes and I am
-                                    constantly recommending it to friends that are going through the same struggle that I went through when
-                                    I had to choose a study.
-                                </blockquote>
-                            </li>
-                            <li class="Quote">
-                                <div class="Author">
-                                    <img class="AuthorImage" src="//monet-prtl-co.imgix.net/Academic/reviewer-Carolin.jpg?h=80&auto=format,compress&q=40" alt="Carolin" width="80" height="80" loading="lazy" >
-                                    <div class="AuthorDetails">
-                                        <span class="AuthorName">Carolin</span> <span class="AuthorCountry">Belize</span>
-                                    </div>
-                                </div>
-                                <blockquote>I was looking for universities for roughly over a year through Studyportals and I finally found my
-                                    university through them. Moving from home might have some doubts but it is worth it to experience
-                                    the world and get a taste of what is truly out there.
-                                </blockquote>
-                            </li>
-                            <li class="Quote">
-                                <div class="Author">
-                                    <img class="AuthorImage" src="//monet-prtl-co.imgix.net/Academic/reviewer-Angelica.jpg?h=80&auto=format,compress&q=40" alt="Angelica" width="80" height="80" loading="lazy" >
-                                    <div class="AuthorDetails">
-                                        <span class="AuthorName">Angelica</span> <span class="AuthorCountry">Canada</span>
-                                    </div>
-                                </div>
-                                <blockquote>Studyportals helped me find my dream program in Bioarchaeological and Forensic Anthropology.
-                                    If you have the opportunity, take the leap! There are no words to describe how much it's worth it.
-                                </blockquote>
-                            </li>
-                            <li class="Quote">
-                                <div class="Author">
-                                    <img class="AuthorImage" src="//monet-prtl-co.imgix.net/Academic/reviewer-Hurmet.jpg?h=80&auto=format,compress&q=40" alt="Hurmet" width="80" height="80" loading="lazy" >
-                                    <div class="AuthorDetails">
-                                        <span class="AuthorName">Hurmet</span> <span class="AuthorCountry">Albania</span>
-                                    </div>
-                                </div>
-                                <blockquote> Studyportals is the main factor that I am here. It was my best decision of my life. Now I am living my
-                                    dream, to study, work and live abroad. I got to know amazing people from all around the world, learned
-                                    some German, and I love the University programme, is intense, involving and helps students to grow in
-                                    the personal and professional aspect.</blockquote>
-                            </li>
-                        </ul>
-                        <div class="BottomDecoration">
-                            <i class="lnr-quote-close QuoteIcon"></i>
-                        </div>
-                    </aside>
-                </div>
-            </div>
-        </section>
-    </div>
-    <section class="col1 wrapped no-top-padding BannerPaneContainer">
-        <div class="colblock">
-            <!-- TODO: GAM migration; remove LeaderboardBanner afterwards. -->
-            <div data-module="Banner:banner_leaderboard_homepages" class="Module StudyPortals_Shared_Modules_Banner_Banner StudyPortals_Shared_Modules_Banner_LeaderboardBanner StudyPortals_Shared_Modules_Banner_HomeLeaderboardBanner">
-                <div class="BannerPlaceHolder Empty" data-size="leaderboard" data-id="master_leaderboard_homepage" data-slot-width="728px" data-slot-height="90px" data-calculate-slots="true"  >
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="WhiteBackgroundPane">
-        <section class="col1 wrapped">
-            <div class="colblock">
-                <div data-module="" class="Module StudyPortals_Shared_Modules_Article_Spotlight_Spotlight">
-                    <article id="ArticleSpotlight"> <h2>Interesting Articles</h2> <div id="ArticleSpotlightContainer">
-                            <article data-clickable="clickable">
-                                <a href="https://www.mastersportal.com/articles/388/all-you-need-to-know-about-the-european-credit-system-ects.html" title="All You Need to Know about the European Credit System ECTS" >
-                                    All You Need to Know about the European Credit System ECTS
-                                </a> <span>When looking at different programmes and course descriptions, you might have already stumbled upon it: ECTS. But what is it and what does it mean?</span>
-                            </article>
-                            <article data-clickable="clickable">
-                                <a href="https://www.mastersportal.com/articles/2921/what-are-online-microcredentials-should-i-study-one-in-2021.html" title="What Are Online Microcredentials? Should I Study One in 2021?" > What Are Online Microcredentials? Should I Study One in 2021? </a>
-                                <span>Find out what Microcredentials are, their benefits, and why they might be a great study choice for you.</span>
-                            </article>
-                            <article data-clickable="clickable">
-                                <a href="https://www.mastersportal.com/articles/2918/how-can-i-get-into-engineering-management.html" title="How Can I Get into Engineering Management?" > How Can I Get into Engineering Management? </a>
-                                <span>Best ways to become an engineering manager. Advance your career in Engineering with a Master's degree, a Postgraduate Certificate, or through a regular promotion.</span>
-                            </article>
-                            <article data-clickable="clickable">
-                                <a href="https://www.mastersportal.com/articles/1522/uk-government-confirms-new-requirements-for-secure-english-language-testing-for-visa-immigration-purposes.html" title="UK Government Confirms New Requirements for Secure English Language Testing for Visa &amp; Immigration Purposes" >
-                                    UK Government Confirms New Requirements for Secure English Language Testing for Visa &amp; Immigration Purposes
-                                </a>
-                                <span>New requirements for Secure English Language Tests. Learn who needs a SELT. IELTS can be used for visa language testing to study at UK universities.</span>
-                            </article>
-                        </div>
-                        <a href="https://www.mastersportal.com/articles/" title="More articles" id="MoreArticles">More articles</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-    </div>
+    <main class="py-4" style="background-color: aliceblue;">
+        @yield('content')
+    </main>
     <footer id="Footer" class="js-footer">
         <section id="FooterMain">
             <div class="BgBars">
@@ -1117,10 +527,10 @@
                     <div id="FooterMainInner">
                         <div data-module="" class="Module StudyPortals_Shared_Modules_Footer_FooterAboutUs_FooterAboutUs">
                             <div id="FooterAboutUs">
-                                <strong class="Header">About StudyAbroad</strong>
+                                <strong class="Header">About Studyportals</strong>
                                 <ul class="List">
                                     <li class="ListItem">
-                                        <a href="https://studyportals.com/about-us/" class="Link" title="About Studyportals" target="_blank" rel="noopener"> About StudyAbroad </a>
+                                        <a href="https://studyportals.com/about-us/" class="Link" title="About Studyportals" target="_blank" rel="noopener"> About Studyportals </a>
                                     </li>
                                     <li class="ListItem">
                                         <a href="https://studyportals.com/institutions/" class="Link" title="Our Marketing Services" target="_blank" rel="noopener"> Our Marketing Services </a>
@@ -1180,27 +590,27 @@
                                     <strong class="Header">Follow us</strong>
                                     <ul class="List">
                                         <li class="ListItem">
-                                            <a href="#" class="Link" target="_blank" rel="noopener" title="Like us on Facebook">
+                                            <a href="https://www.facebook.com/Studyportals" class="Link" target="_blank" rel="noopener" title="Like us on Facebook">
                                                 <i class="lnr-facebook SocialIcon"></i>
                                             </a>
                                         </li>
                                         <li class="ListItem">
-                                            <a href="#" class="Link" target="_blank" rel="noopener" title="Connect to us on LinkedIn">
+                                            <a href="https://www.linkedin.com/company/393845" class="Link" target="_blank" rel="noopener" title="Connect to us on LinkedIn">
                                                 <i class="lnr-linkedin SocialIcon"></i>
                                             </a>
                                         </li>
                                         <li class="ListItem">
-                                            <a href="#" class="Link" target="_blank" rel="noopener" title="Follow us on YouTube">
+                                            <a href="https://www.youtube.com/user/studyportals" class="Link" target="_blank" rel="noopener" title="Follow us on YouTube">
                                                 <i class="lnr-youtube SocialIcon"></i>
                                             </a>
                                         </li>
                                         <li class="ListItem">
-                                            <a href="#" class="Link" target="_blank" rel="noopener" title="Follow us on Twitter">
+                                            <a href="https://twitter.com/studyportals" class="Link" target="_blank" rel="noopener" title="Follow us on Twitter">
                                                 <i class="lnr-twitter SocialIcon"></i>
                                             </a>
                                         </li>
                                         <li class="ListItem">
-                                            <a href="#" class="Link" target="_blank" rel="noopener" title="Follow us on Instagram"> <i class="lnr-instagram SocialIcon"></i>
+                                            <a href="https://www.instagram.com/studyportals/" class="Link" target="_blank" rel="noopener" title="Follow us on Instagram"> <i class="lnr-instagram SocialIcon"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -1254,7 +664,7 @@
                                 <i class="lnr-heart"></i>
                                 <span>by our team of 35 nationalities</span>
                             </a>
-                            Copyright &copy; 2007&ndash;2021 StudyAbroad B.V.
+                            Copyright &copy; 2007&ndash;2021 Studyportals B.V.
                         </div>
                     </div>
                 </div>
