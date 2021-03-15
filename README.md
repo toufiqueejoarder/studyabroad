@@ -1,4 +1,4 @@
-# Project Title: EduHelp – A higher study help portal
+# Project Title: Study Abroad – A higher study help portal
 
 ## 1.	Introduction 
 
