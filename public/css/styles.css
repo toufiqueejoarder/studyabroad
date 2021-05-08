@@ -1,0 +1,394 @@
+@media (min-width: 1025px){#NavBar .AccountModule {
+    padding: 0;
+}
+}
+#NavBar .AccountModule, #NavBar .Brand {
+    flex: 1;
+}
+
+    @media (min-width: 1025px){
+        .HeaderToggleContent {
+            position: relative;
+            right: 0;
+            left: 0;
+            width: 100%;
+            top: auto;
+            z-index: auto;
+        }
+    }
+#HeaderLoggedIn, #HeaderLogin {
+    padding: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    text-align: right;
+}
+.panel-title {
+    position: relative;
+    color: #247BA0;
+}
+
+.panel-title::after {
+    content: "\f107";
+    color: #247BA0;
+    top: -2px;
+    right: 0px;
+    position: absolute;
+    font-family: "FontAwesome"
+}
+
+.panel-title[aria-expanded="true"]::after {
+    content: "\f106";
+}
+
+/*
+ * Added 12-27-20 to showcase full title clickthrough
+ */
+
+.panel-heading-full.panel-heading {
+    padding: 0;
+}
+
+.panel-heading-full .panel-title {
+    padding: 10px 15px;
+}
+
+.panel-heading-full .panel-title::after {
+    top: 10px;
+    right: 15px;
+}
+.nav-tabs .nav-link.active {
+    padding: .2rem 0;
+    margin: 0 .5rem;
+    color: #05293c;
+    font-weight: 700;
+    border-bottom: 5px solid #05293c !important;
+}
+
+@media (min-width: 1025px) {
+    .Result {
+        flex-direction: row;
+        padding: 1.5rem 2rem 1.5rem 1rem;
+    }
+}
+@media (min-width: 1025px){
+    .Result {
+        font-size: .9375rem;
+        line-height: 1.5rem;
+    }
+}
+.Result {
+    position: relative;
+    display: flex;
+    margin-bottom: 2px;
+    background: #ffffff;
+    /*font-size: .8125rem;*/
+    flex-direction: row;
+    padding: 1.5rem 2rem 1.5rem 1rem;
+    font-size: .9375rem;
+    line-height: 1.5rem;
+}
+.Result .LogoContainer {
+    width: 112px;
+    max-height: 112px;
+    padding: 8px;
+    margin-right: 8px;
+}
+
+#galactus img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+.Result .LogoContainer img {
+    max-height: 100%;
+}
+@media (min-width: 1025px){
+    .Result .LogoContainer img {
+        margin: 0 auto;
+        display: block;
+    }
+}
+@media (min-width: 1025px){
+    .Result .InformationContainer {
+        flex: 1;
+    }
+}
+.Result .InformationContainer {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+}
+
+.Result .InformationContainer .CardHeader {
+    display: flex;
+    flex-direction: row;
+    min-width: 12rem;
+}
+.Result .IncentivesWrapper {
+    position: absolute;
+    margin: 0;
+    padding: .5rem 1rem;
+    top: 0;
+    right: 0;
+    border: 0;
+    background: 0 0;
+    display: flex;
+}
+@media (min-width: 1025px){
+    .Result .IncentivesWrapper {
+        padding: 1rem 2rem;
+    }
+}
+.Result .InformationContainer .CardHeader .StudyTitle {
+    flex: 1;
+}
+@media (min-width: 1025px){
+    .Result .StudyTitle {
+        height: auto;
+        font-size: 1.0625rem;
+        line-height: 1.5rem;
+        max-height: 3rem;
+    }
+}
+.Result .StudyTitle {
+    display: block;
+    margin-bottom: .5rem;
+    max-height: 2.4rem;
+    overflow: hidden;
+    color: #05293c;
+    font-weight: 700;
+    line-height: 1.2rem;
+    font-size: .9375rem;
+    margin-right: 4rem;
+}
+@media (min-width: 1025px){
+    .Result .InformationContainer .InformationLeft {
+        width: calc(100% - 150px);
+    }
+}
+.Result .InformationContainer .InformationLeft {
+    min-width: 0;
+    width: 75%;
+}
+@media (min-width: 1025px) {
+    .Result .Location {
+        color: #05293c;
+    }
+}
+.Result .Location {
+    color: #3f5c6e;
+}
+.Result .Location .LocationFact {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: initial;
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
+    font-size: 15px;
+}
+.Result .Description {
+    display: block;
+    height: 2rem;
+    max-width: 460px;
+    overflow: hidden;
+    color: #3f5c6e;
+    margin: 8px 0px 0px;
+    line-height: 1rem;
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    text-align: initial;
+}
+.Result .InformationContainer .InformationRight {
+    width: auto;
+    text-align: right;
+    margin-left: auto;
+    display: block;
+}
+.Result .Fact.KeyFact {
+    display: block;
+    color: #05293c;
+    font-weight: 600;
+}
+.Result .CardFooter {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+.Result .InformationContainer .ExtraFacts {
+    width: 100%;
+    padding-right: 1rem;
+    text-align: initial;
+}
+.Result .ExtraFact:not(:last-child) {
+    padding-right: 14px;
+}
+.Result .ExtraFact:first-child {
+    margin-top: 1rem;
+}
+.Result .ExtraFact{
+    font-size: 13px;
+}
+.Result .CardFooter .Promoted {
+    font-size: .6875rem;
+    line-height: 1rem;
+    justify-content: space-between;
+    display: flex;
+    flex: 0 0 65px;
+    text-align: right;
+    color: #3f5c6e;
+}
+.Result .CardFooter .InfoIconPromoted {
+    margin: -5px -.5rem -5px 0;
+    padding: .5rem;
+    line-height: 1;
+}
+.RefineContent {
+    font-size: .8125rem;
+    line-height: 1rem;
+    margin-left: 1.1rem;
+}
+.RefineContentDiscipline {
+    padding-bottom: 1rem;
+    font-size: .8125rem;
+    line-height: 1rem;
+}
+.RefineModule ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.RefineModule ul li:first-child, .RefineModule ul li:last-child {
+    margin: .25rem 0;
+}
+.RefineModule ul li {
+    flex-wrap: wrap;
+    float: left;
+    width: 100%;
+}
+#diFilter.has-selection .BackMainDisciplines {
+    display: block;
+}
+#diFilter .BackMainDisciplines {
+    margin-bottom: .5rem;
+}
+#FilterContainer .RefineModule ul li {
+    flex-wrap: wrap;
+}
+
+#diFilter .Discipline {
+    margin: 0;
+    padding: .25rem 0;
+    line-height: 1.4;
+    color: #313233;
+    cursor: pointer;
+    font-weight: 400;
+}
+#diFilter.has-selection .DisciplineGroup:not(.is-active) {
+    display: none;
+}
+#diFilter.has-selection .is-active {
+    margin-top: 0;
+}
+#diFilter .Discipline.is-selected {
+    font-weight: 700;
+}
+#diFilter.has-selection .is-active .SubDisciplineList {
+    display: block;
+}
+#OffCanvasFilterMenu * {
+    box-sizing: border-box;
+}
+#diFilter .Discipline.is-selected .Facet {
+    font-weight: 400;
+}
+#diFilter.has-selection .is-active .SubDisciplineList {
+    display: block;
+}
+#diFilter .SubDisciplineList {
+    padding-left: 1rem;
+    width: 100%;
+}
+
+.RefineModule {
+    position: relative;
+    padding: 0 1rem;
+    background-color: #fff;
+}
+.RefineModule .RefineContent {
+    font-size: .8125rem;
+    line-height: 1rem;
+    margin-left: 1.1rem;
+}
+.LocationScreens {
+    width: calc(200% + 6rem);
+    margin-left: -1.5rem;
+}
+.LocationScreens .Screen {
+    float: left;
+    position: relative;
+    width: 50%;
+    padding: 0 1.5rem;
+    min-height: 1px;
+}
+.CheckboxLabel {
+    display: flex;
+}
+.RefineModule input[type=checkbox] {
+    width: 13px;
+    height: 13px;
+    margin: 4px .4rem 0 0;
+}
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    /*margin: 3px 3px 3px 4px;*/
+    padding: initial;
+    border: initial;
+}
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.RefineModule label {
+    display: flex;
+    align-items: baseline;
+}
+.RefineModule .Facet {
+    font-size: .8125rem;
+    line-height: 1rem;
+    color: #3f5c6e;
+    opacity: 1;
+    transition: opacity .5s ease;
+    padding-left: .2rem;
+}
+
+#HeroContainer {
+    position: relative;
+}
+#HeroContainer .HeroContainerHelper {
+    width: 100%;
+}
+
+
