@@ -995,37 +995,7 @@
             </div>
         </div>
     </section>
-    <div class="WhiteBackgroundPane">
-        <section class="col1 wrapped">
-            <div class="colblock">
-                <div data-module="" class="Module StudyPortals_Shared_Modules_Article_Spotlight_Spotlight">
-                    <article id="ArticleSpotlight"> <h2>Interesting Articles</h2> <div id="ArticleSpotlightContainer">
-                            <article data-clickable="clickable">
-                                <a href="/all-you-need-to-know-about-the-european-credit-system-ects" title="All You Need to Know about the European Credit System ECTS" >
-                                    All You Need to Know about the European Credit System ECTS
-                                </a> <span>When looking at different programmes and course descriptions, you might have already stumbled upon it: ECTS. But what is it and what does it mean?</span>
-                            </article>
-                            <article data-clickable="clickable">
-                                <a href="/what-are-online-microcredentials-should-i-study-one-in-2021" title="What Are Online Microcredentials? Should I Study One in 2021?" > What Are Online Microcredentials? Should I Study One in 2021? </a>
-                                <span>Find out what Microcredentials are, their benefits, and why they might be a great study choice for you.</span>
-                            </article>
-                            <article data-clickable="clickable">
-                                <a href="/how-can-i-get-into-engineering-management" title="How Can I Get into Engineering Management?" > How Can I Get into Engineering Management? </a>
-                                <span>Best ways to become an engineering manager. Advance your career in Engineering with a Master's degree, a Postgraduate Certificate, or through a regular promotion.</span>
-                            </article>
-                            <article data-clickable="clickable">
-                                <a href="https://www.mastersportal.com/articles/1522/uk-government-confirms-new-requirements-for-secure-english-language-testing-for-visa-immigration-purposes.html" title="UK Government Confirms New Requirements for Secure English Language Testing for Visa &amp; Immigration Purposes" >
-                                    UK Government Confirms New Requirements for Secure English Language Testing for Visa &amp; Immigration Purposes
-                                </a>
-                                <span>New requirements for Secure English Language Tests. Learn who needs a SELT. IELTS can be used for visa language testing to study at UK universities.</span>
-                            </article>
-                        </div>
-                        <a href="https://www.mastersportal.com/articles/" title="More articles" id="MoreArticles">More articles</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-    </div>
+    
     <footer id="Footer" class="js-footer">
         <section id="FooterMain">
             <div class="BgBars">

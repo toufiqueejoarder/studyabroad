@@ -1,3 +1,5 @@
+@extends('app')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -699,7 +701,8 @@
                 <div id="CountryStudies">
                     <h2>Universities, colleges and schools in {{$study->country}}</h2>
                     @foreach($universityName as $data)
-                        {{$data->organization}}
+                        <ul><a href="{{URL::to('/University-view/'.$data->organization)}}" class="FeaturedBy"> {{$data->organization}}</a></ul>
+                      
                     @endforeach
                 </div>
             </div>
