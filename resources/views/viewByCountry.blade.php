@@ -5,7 +5,7 @@
 <head>
     <!-- Meta tags -->
     <meta charset="UTF-8">
-    <meta name="description" content="Choose excellent study programmes abroad in Germany. Apply for top engineering courses, DAAD student exchange, English-taught classes and generous scholarships.">
+    <meta name="description" content="Choose excellent study programmes abroad in {{$study->country}}. Apply for top engineering courses, DAAD student exchange, English-taught classes and generous scholarships.">
     <!-- Needed to sent the URL as the referrer from HTTPS to HTTP -->
     <meta name="referrer" content="unsafe-url">
     <script type="text/javascript">
@@ -71,7 +71,7 @@
     <script> window.Meta = { reflector_url: 'https://reflector.prtl.co/', sl_external_url: 'https://sl.prtl.co/' }; </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@studyportals/vue-config@3.0.0/dist/library.min.js"></script>
     <link rel="canonical" href="https://www.mastersportal.com/countries/11/germany.html">
-    <title> Find  Masters in Germany 2021 | Country info | Mastersportal.com  </title>
+    <title> Find  Masters in {{$study->country}} </title>
     <link rel="stylesheet" href="https://www.mastersportal.com/dist/master/shared.2b3058c0fcc31b15d920.css">
     <link rel="stylesheet" href="https://www.mastersportal.com/dist/master/86966230c17b2be6c62590d96a801316de437eb3.844162edca97b8a9175d.css">
     <script>
@@ -330,7 +330,7 @@
                                 <li class="SectionNavigationItem" data-menu-section="decide">
                                     <a class="SectionNavigationLink js-SectionNavigationLink">
                                         <i class="SectionNavigationIcon lnr-archery"></i>
-                                        <span class="SectionNavigationLabel">Decide</span>
+                                        <span class="SectionNavigationLabel">Ranks</span>
                                     </a>
                                     <div class="SectionContent SectionContentDecide" data-menu-section="decide">
                                         <div class="SectionContentColumn SectionContentColumnFullWidth">
@@ -667,7 +667,7 @@
                     @foreach($Spinfo as $item)
                         <p >    {{$item}}</p>
                     @endforeach
-                    <h4>Helpful ways to make sure you qualify for a Germany university</h4>
+                    <h4>Helpful ways to make sure you qualify for a {{$study->country}} university</h4>
                     @foreach($Swtql as $item)
                         <p >{{$item}}</p>
                     @endforeach
@@ -725,7 +725,7 @@
             </div>
             <div data-module="Country:how_to_apply_content" class="Module StudyPortals_Shared_Modules_Country_HowToApply_HowToApply">
                 <section id="HowToApplyContent">
-                    <h2>How to Apply to a Master's in Germany</h2>
+                    <h2>How to Apply to a Master's in {{$study->country}}</h2>
                     <p>If you've decided to study a Master's degree at a university in Germany, you will have to gather the right documents to prove that you fit the university requirements. Provide complete personal information, previous qualifications, financial information, and a personal statement.</p>
                     <!-- Australia -->  <!-- Canada -->  <!-- France -->  <!-- Germany -->
                     <h3>What documents do I need to provide to apply in Germany?</h3>
