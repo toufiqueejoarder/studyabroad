@@ -176,15 +176,15 @@
                                 <li class="SectionNavigationItem" data-menu-section="decide">
                                     <a class="SectionNavigationLink js-SectionNavigationLink">
                                         <i class="SectionNavigationIcon lnr-archery"></i>
-                                        <span class="SectionNavigationLabel">Decide</span>
+                                        <span class="SectionNavigationLabel">Rankings</span>
                                     </a>
                                 </li>
                             </ul>
                             <ul class="MainMenuSections SectionsContent">
                                 <li class="SectionNavigationItem" data-menu-section="explore">
-                                    <a class="SectionNavigationLink js-SectionNavigationLink">
-                                        <i class="SectionNavigationIcon lnr-compass2"></i>
-                                        <span class="SectionNavigationLabel">Explore</span>
+                                    
+                                        
+                                        </span>
                                     </a>
                                     <div class="SectionContent" data-menu-section="explore">
                                         <section class="SectionContentColumn SectionContentColumnLeft">
@@ -285,22 +285,7 @@
                                         <section class="SectionContentColumn SectionContentColumnRight">
                                             <div class="SubSectionContentTitle">Most popular countries</div>
                                             <ul class="SubSectionContentList">
-                                                <li class="SubSectionContentItem">
-                                                    <?php $country='Netherlands'?>
-                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-country/'.$country)}}" title="Netherlands">Netherlands</a>
-                                                </li>
-                                                <li class="SubSectionContentItem">
-                                                    <?php $country='France'?>
-                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-country/'.$country)}}"" title="France">France</a>
-                                                </li>
-                                                <li class="SubSectionContentItem">
-                                                    <?php $country='Germany'?>
-                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-country/'.$country)}}" title="Germany">Germany</a>
-                                                </li>
-                                                <li class="SubSectionContentItem">
-                                                    <?php $country='Norway'?>
-                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-country/'.$country)}}" title="Norway">Norway</a>
-                                                </li>
+                                                
                                                 <li class="SubSectionContentItem">
                                                     <?php $country='United Kingdom'?>
                                                     <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-country/'.$country)}}" title="United Kingdom">United Kingdom</a>
@@ -317,51 +302,27 @@
                                                     <?php $country='Australia'?>
                                                     <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-country/'.$country)}}" title="Australia">Australia</a>
                                                 </li>
+                                                <li class="SubSectionContentItem">
+                                                    <?php $country='Finland'?>
+                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-country/'.$country)}}" title="Finland">Finland</a>
+                                                </li>
                                             </ul>
                                             <a class="SubSectionViewAllLink" href="/countries/all" title="View all countries"> View all countries </a>
                                         </section>
                                     </div>
                                 </li>
                                 <li class="SectionNavigationItem" data-menu-section="decide">
-                                    <a class="SectionNavigationLink js-SectionNavigationLink">
-                                        <i class="SectionNavigationIcon lnr-archery"></i>
-                                        <span class="SectionNavigationLabel">Decide</span>
+                                    
                                     </a>
                                     <div class="SectionContent SectionContentDecide" data-menu-section="decide">
                                         <div class="SectionContentColumn SectionContentColumnFullWidth">
-                                            <div class="SubSectionContentTitle">Tools to help you decide</div>
-                                            <a href="" class="SubSectionCtaButton" title="Best Fit">
-                                                <i class="lnr-clipboard-check SubSectionCtaIcon"></i>
-                                                <span class="SubSectionCtaTitle">Best Fit</span>
-                                                <span class="SubSectionCtaDescription">Check your budget and academic fit with your study of choice</span>
-                                            </a>
-                                            <a href="/student-review" class="SubSectionCtaButton" title="Student Reviews">
-                                                <i class="lnr-reviews SubSectionCtaIcon"></i>
-                                                <span class="SubSectionCtaTitle">Student Reviews</span>
-                                                <span class="SubSectionCtaDescription">What are students saying about your chosen universities?</span>
-                                            </a>
-                                        </div>
+                                            
                                         <section class="SectionContentColumn SectionContentColumnFullWidth">
                                             <div class="SubSectionContentTitle">
                                                 University rankings per country
                                             </div>
                                             <ul class="SubSectionContentList SubSectionContentListTwoColumns">
-                                                <li class="SubSectionContentItem">
-                                                    <?php $country='Netherlands'?>
-                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-Ranked-University/'.$country)}}"> Netherlands </a>
-                                                </li>
-                                                <li class="SubSectionContentItem">
-                                                    <?php $country='France'?>
-                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-Ranked-University/'.$country)}}"> France </a>
-                                                </li>
-                                                <li class="SubSectionContentItem">
-                                                    <?php $country='Germany'?>
-                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-Ranked-University/'.$country)}}"> Germany </a>
-                                                </li>
-                                                <li class="SubSectionContentItem">
-                                                    <?php $country='Norway'?>
-                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-Ranked-University/'.$country)}}"> Norway </a>
-                                                </li>
+                                                
                                                 <li class="SubSectionContentItem">
                                                     <?php $country='United Kingdom'?>
                                                     <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-Ranked-University/'.$country)}}"> United Kingdom </a>
@@ -377,6 +338,10 @@
                                                 <li class="SubSectionContentItem">
                                                     <?php $country='Australia'?>
                                                     <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-Ranked-University/'.$country)}}"> Australia </a>
+                                                </li>
+                                                <li class="SubSectionContentItem">
+                                                    <?php $country='Finland'?>
+                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-Ranked-University/'.$country)}}"> Finland </a>
                                                 </li>
                                             </ul>
                                         </section>
@@ -430,13 +395,13 @@
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2" style="padding: 1rem 2rem; height: auto; box-sizing: border-box; border-radius: 0 0 5px 5px; font-size: .8125rem; line-height: 1rem; background: #fff;">
                                     <p style="display: block; margin: 0 0 1rem; font-size: .8125rem; line-height: 1rem; color: black;text-align: center;">Free access to all our programmes and services</p>
                                     <div class="dropdown-item" type="button" style="background-color: #4285f4; padding:3px 15px 3px; color: #FFFFFF; margin: auto;"><a href="{{route('login.google')}}" style="display: flex;"><i class="fa fa-google-plus-square"  style="font-size:45px;color: #FFFFFF;margin: 1px 14px 1px; "></i><p style="font-size: 20px; float: right; margin-top: 9px; margin-left: 9px; color: white;">Login With Google</p></a></div>
-                                    <div class="dropdown-item" type="button" style="background-color: #4267b2; padding:0px 15px 0px; color: #FFFFFF; margin-top: 5px;"><a href="{{route('login.facebook')}}" style="display: flex;"><i class="fa fa-facebook-official" style="font-size:45px;color: #FFFFFF;margin: 1px 14px 1px; "></i><p style="font-size: 20px; float: right; margin-top: 9px; margin-left: 9px; color: white;">Login With Facebook</p></a></div>
-                                    <div class="dropdown-item" type="button" style="background-color: #ffffff; padding:0px 15px 0px; color: #FFFFFF; margin-top: 5px; border: 1px dashed black;"><a href="/login"><i class="fa fa-envelope" style="font-size:45px;color: black;margin: 1px 14px 1px; "><p style="font-size: 23px;
+                                            <div class="dropdown-item" type="button" style="background-color: #4267b2; padding:0px 15px 0px; color: #FFFFFF; margin-top: 5px;"></div>
+                                            <div class="dropdown-item" type="button" style="background-color: #ffffff; padding:0px 0px 0px; color: #FFFFFF; margin-top: 5px; border: 1px dashed black;"><a href="/login"><i class="fa fa-envelope" style="font-size:45px;color: black;margin: 1px 14px 1px; "><p style="font-size: 23px;
             float: right;
             margin-top: 9px;
           margin-left: 19px;">Login With Email</p></i></a></div>
-                                    <p style="text-align: center;">Don't have a account? <span><a href="/register" style="color: #1E8558;">Sign Up</a> </span></p>
-                                </div>
+                                            <p style="text-align: center;">Don't have a account? <span><a href="/register" style="color: #1E8558;">Sign Up</a> </span></p>
+                                        </div>
                                     @endif
                                 @else
                                     <div class="nav-item dropdown" style="width:max-content;">
@@ -540,16 +505,16 @@
                     <div id="FooterMainInner" style="width: 80%; margin: auto;">
                         <div style="margin: auto;" class="Module StudyPortals_Shared_Modules_Footer_FooterAboutUs_FooterAboutUs">
                             <div id="FooterAboutUs">
-                                <strong class="Header">About StudyAbroad</strong>
+                                <strong class="Header">StudyAbroad</strong>
                                 <ul class="List">
                                     <li class="ListItem">
-                                        <a href="/about-us" class="Link" title="About Studyportals" target="_blank" rel="noopener"> About Study Abroad </a>
+                                        <a href="/about-us" class="Link" title="About Studyportals" target="_blank" rel="noopener"> About Us </a>
                                     </li>
                                     <li class="ListItem">
-                                        <a href="" class="Link" title="Our Marketing Services" target="_blank" rel="noopener"> Our Marketing Services </a>
+                                        
                                     </li>
                                     <li class="ListItem">
-                                        <a href="" class="Link" title="Careers" target="_blank" rel="noopener"> Careers </a>
+                                        
                                     </li>
                                     <li class="ListItem">
                                         <a data-toggle="collapse" href="#collapseExample" class="Link" title="Contact us" target="_blank" rel="noopener"> Contact us </a>
@@ -598,11 +563,7 @@
                                     </ul>
                                 </nav>
                             </div>
-                            <div data-module="" class="Module StudyPortals_Shared_Modules_Footer_FooterAddToHomescreen_FooterAddToHomescreen">
-                                <div id="FooterAddToHomescreen">
-                                    <button id="AddToHomeScreen" class="DriverButton Link"> Add to home screen </button>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -612,22 +573,20 @@
             <div class="col1 no-vertical-padding wrapped">
                 <div class="colblock FlexBranding">
                     <div class="FooterLogo">
-                        <div data-module="" class="Module StudyPortals_Shared_Modules_Footer_FooterLogo_FooterLogo">
-                            <img src="/img/1.png" class="SPLogo" alt="Studyportals" style="width:120px !important; height:auto;" loading="lazy" >
-                        </div>
+                        
                     </div>
                     <div class="FooterDisclaimer">
                         <div data-module="" class="Module StudyPortals_Shared_Modules_Footer_FooterDisclaimer_FooterDisclaimer">
-                            <div id="FooterDisclaimer">
+                            <div id="FooterDisclaimer"> 
                                 <ul class="LegalList">
                                     <li class="LegalListItem">
-                                        <a href="https://studyportals.com/about-us/terms/" rel="noopener" class="LegalLink" title="Terms of use" target="_blank">Terms of Use</a>
+                                        @COPYRIGHT BY CSE499B; STUDY ABROAD TEAM
                                     </li>
                                     <li class="LegalListItem">
-                                        <a href="https://studyportals.com/about-us/privacy-2/" rel="noopener" class="LegalLink" title="Privacy &amp; Cookie statement" target="_blank">Privacy &amp; Cookie statement</a>
+                                        
                                     </li>
                                     <li class="LegalListItem">
-                                        <a href="https://studyportals.com/about-us/disclaimer/" rel="noopener" class="LegalLink" title="Disclaimer" target="_blank">Disclaimer</a>
+                                        
                                     </li>
                                 </ul>
                             </div>

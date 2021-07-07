@@ -5,7 +5,7 @@
 <head>
     <!-- Meta tags -->
     <meta charset="UTF-8">
-    <meta name="description" content="Choose excellent study programmes abroad in {{$study->country}}. Apply for top engineering courses, DAAD student exchange, English-taught classes and generous scholarships.">
+    <meta name="description" content="{{$study->country}}. ">
     <!-- Needed to sent the URL as the referrer from HTTPS to HTTP -->
     <meta name="referrer" content="unsafe-url">
     <script type="text/javascript">
@@ -500,7 +500,8 @@
     </header>
     <section id="HeroContainer">
         <div class="HeroContainerHelper">
-            <span class="HeroImage js-heroImage" style="background-image: url(&quot;https://storage-prtl-co.imgix.net/endor/countries/11/covers/1546951568_Germany%20-%20314149679.jpg?h=480&amp;fit=crop&amp;w=1920&amp;auto=format,compress&amp;q=40&quot;);"></span>
+            <span class="HeroImage js-heroImage" style="background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply; background-image: url(&quot;https://storage-prtl-co.imgix.net/endor/countries/11/covers/1546951568_Germany%20-%20314149679.jpg?h=480&amp;fit=crop&amp;w=1920&amp;auto=format,compress&amp;q=40&quot;);"></span>
             <span class="HeroImage HeroImagePlaceholder js-heroImageLowResPlaceholder is-loaded" style="background-image: url(&quot;https://storage-prtl-co.imgix.net/endor/countries/11/covers/1546951568_Germany%20-%20314149679.jpg?h=100&amp;w=240&amp;fit=crop&amp;q=100&amp;blur=100&amp;auto=format,compress&amp;q=40&quot;);"></span>
             <span class="HeroOverlay"></span>
             <div class="HeroContentWrapper">
@@ -518,14 +519,8 @@
                         <div class="HeroTextContent">
                             <section id="CountryHeader" data-level="master">
                                 <h1>Find Master's Degrees in <span>{{$study->country}}</span> </h1>
-                                <form id="SingleSearch" class="Form" method="get" action="/search">
-                                    <input id="KeywordInput" class="js-autoCompleteInput KeywordInput" type="text" name="keywords" autocomplete="off" placeholder="What do you want to study?" data-type="what" data-country="11">
-                                    <button type="submit" class="SearchButton"> <i class="lnr-magnifier SearchIcon"></i> <span class="SearchWord">Search</span> </button>
-                                    <div class="AutoCompleteContainer Hidden">
-                                        <ul class="AutoComplete"></ul>
-                                    </div>
-                                </form>
-                                <div class="js-variation Hidden" data-variation="0"></div>
+                                
+                                
                             </section>
                         </div>
                     </section>
@@ -540,10 +535,10 @@
                                 <nav id="LinkTrail">
                                     <ul class="LinkTrail">
                                         <li>
-                                            <a href="https://www.mastersportal.com/" title="Home">Home</a>
+                                            <a href="/" title="Home">Home</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.mastersportal.com/countries/" title="Countries">Countries</a>
+                                            <a href="/countries/all" title="Countries">Countries</a>
                                         </li>
                                         <li> {{$study->country}} </li>
                                     </ul>
@@ -568,19 +563,14 @@
                                     <span class="QuickFactsLabel">Academic Year</span>
                                 </div>
                             </li>
-                            <li class="OpenTab QuickFact js-openTab" title="Listed Institutes">
-                                <i class="CountryQuickFactsLogos lnr-university"></i>
-                                <div class="QFDetails">
-                                    <span class="QuickFactsData">Unavailable</span>
-                                    <span class="QuickFactsLabel">Listed Institutes</span>
-                                </div>
-                            </li>
+                            
                             <li data-clickable="clickable" class="QuickFact">
                                 <i class="CountryQuickFactsLogos lnr-trophy2"></i>
                                 <div class="QFDetails">
                                     <a href="{{URL::to('/search-Ranked-University/'.$unis->country)}}" title="Ranked Universities">
-                                        <span class="QuickFactsData">{{$unis->rnkduni}}</span>
-                                        <span class="QuickFactsLabel">Ranked Universities</span>
+                                        
+                                        <span class="QuickFactsData">Ranked Universities</span>
+
                                     </a>
                                 </div>
                             </li>
@@ -726,38 +716,23 @@
             <div data-module="Country:how_to_apply_content" class="Module StudyPortals_Shared_Modules_Country_HowToApply_HowToApply">
                 <section id="HowToApplyContent">
                     <h2>How to Apply to a Master's in {{$study->country}}</h2>
-                    <p>If you've decided to study a Master's degree at a university in Germany, you will have to gather the right documents to prove that you fit the university requirements. Provide complete personal information, previous qualifications, financial information, and a personal statement.</p>
-                    <!-- Australia -->  <!-- Canada -->  <!-- France -->  <!-- Germany -->
-                    <h3>What documents do I need to provide to apply in Germany?</h3>
-                    <p>Before you start collecting all the documents needed to apply to a university in Germany, you will have to either have to check if your qualifications match those requested by the university with an HZB (Hochschulzugangsberechtigung) or attend an entrance examination (if you’re from outside the EU/EEA).</p>
-                    <p>After you are cleared of these, you will need to check a certain process, called Numerus Clausus, which is a thorough process of selection.</p>
-                    <p>The final step will be to provide these documents:<p>
-                    <ul>
-                        <li>Certified copy of your previously completed degree;</li>
-                        <li>An official translation of the course modules and grades;</li>
-                        <li>A passport photo;</li>
-                        <li>Copy of your passport;</li>
-                        <li>Proof of language proficiency – German (and / or English);</li>
-                        <li>A motivation letter;</li>
-                        <li>Proof you covered the application fee.</li>
-                    </ul>
-                    <h3>Prove your English (or German) skills</h3>
-                    <p>If you decide you want to follow a course in German, you will need to provide certification you can study and manage your exams in this language. That’s why you will need to obtain one of these:</p>
-                    <ul>
-                        <li>DSH (German language exam for university entrance) – available only in Germany;</li>
-                        <li>TestDaF – available in 90 countries worldwide.</li>
-                    </ul>
-                    <p>Otherwise, if you want to study one of the numerous programmes in English, offered by German universities, then you should have:</p>
-                    <ul>
-                        <li>An IELTS English proficiency test;</li>
-                        <li>A TOEFL English proficiency test.</li>
-                    </ul>
-                    <h3>Application deadlines for Germany</h3>
-                    <p>Like any application process, the sooner you start applying, the better. The two enrolment sessions you have to keep an eye on are:</p>
-                    <ul>
-                        <li>Winter enrolment: between the end of May and 15th of July;</li>
-                        <li>Summer enrolment: between the beginning of December and the 15th of January.</li>
-                    </ul>
+
+                @foreach($htNotes as $item)
+                    <p >{{$item}}</p>
+                @endforeach
+                <h4>What documents do I need to provide to apply in {{$study->country}}?</h4>
+                @foreach($htDocs as $item)
+                    <p >{{$item}}</p>
+                @endforeach
+                <h4>Prove your Language Proficiency</h4>
+                @foreach($htSkills as $item)
+                    <p >{{$item}}</p>
+                @endforeach
+                <h4>Application deadlines for {{$study->country}}</h4>
+                @foreach($htDead as $item)
+                    <p >{{$item}}</p>
+                @endforeach
+                    
                 </section>
             </div>
             <div data-module="" class="Module StudyPortals_Shared_Modules_Country_Conversion_Conversion">
@@ -765,23 +740,9 @@
         </div>
     </section>
     <!-- //SWITCHABLE CONTENT--> <!-- SWITCHABLE CONTENT-->
-    <section id="SwitchableContentBottom" class="col1 WrappedContent no-vertical-padding">
-        <div id="BottomSearchColblock" class="colblock">
-            <div data-module="" class="Module StudyPortals_Shared_Modules_Country_BottomSearch_BottomSearch">
-                <div id="BottomSearch"> <div class="FormContainer">
-                        <h2 class="DegreeType">  Find Master's Degrees in {{$study->country}} </h2>
-                        <form id="SingleBottomSearch" class="Form" method="get" action="/search" >
-                            <input id="BottomKeywordInput" class="js-autoCompleteInput KeywordInput" type="text" name="keywords" autocomplete="off" placeholder="What do you want to study?" data-type="what" data-country="11" >
-                            <button type="submit" class="SearchButton">
-                                <i class="lnr-magnifier SearchIcon"></i>
-                                <span class="SearchWord">Search</span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </p>
+</p>
+</section>
     <!-- //SWITCHABLE CONTENT-->
     <div id="RelatedInformation" class="WhiteBackgroundPane">
         <div class="col1 wrapped">
@@ -1051,169 +1012,7 @@
             </div>
         </div>
     </div>
-    <footer id="Footer" class="js-footer">
-        <section id="FooterMain">
-            <div class="BgBars">
-                <div class="BgBarA">&nbsp;</div>
-                <div class="BgBarB">&nbsp;</div>
-                <div class="BgBarC">&nbsp;</div>
-                <div class="BgBarD">&nbsp;</div>
-            </div>
-            <div class="FooterMainCol1 col1 no-vertical-padding wrapped">
-                <div class="colblock no-top-margin">
-                    <div id="FooterScrollToTopWrapper">
-                        <div data-module="" class="Module StudyPortals_Shared_Modules_Footer_FooterScrollToTop_FooterScrollToTop">
-                            <div id="FooterScrollToTop">
-                                <button class="FooterScrollToTopButton" id="js-FooterScrollToTopClick" title="Scroll to top">
-                                    <span class="FooterScrollToTopRocket" id="js-FooterScrollToTopAnimate">
-                                        <svg id="ToTopRocketSVG" viewBox="0 0 23 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <defs>
-                                                <path d="M9.41593903 14.1209893c-1.03049752.9923723-1.03049752 2.6043019 0 3.5957737 1.03049747.9914718 2.70681087.9914718 3.73637247 0 1.0304975-.9914718 1.0304975-2.6034014 0-3.5957737-1.0295616-.9914718-2.705875-.9914718-3.73637247 0m4.98214197 4.7934644c-1.7165599 1.6515524-4.51135155 1.6515524-6.22791145 0-1.7165599-1.6515525-1.7165599-4.3396027 0-5.9911551 1.7165599-1.6515525 4.51135155-1.6515525 6.22791145 0 1.7156239 1.6506519 1.7156239 4.3405031 0 5.9911551" id="window"/>
-                                                <path d="M9.77787671 35.2286221c-.615865.5934423-.80118608 1.8109444-.53443604 3.5228317.26019828 1.6821701.94532473 3.7794796 2.04040383 6.2496041.9939949-2.2440941 1.6510423-4.1820117 1.9599108-5.779533.4165044-2.1576444.1038921-3.2166551-.2302474-3.7236475-.3360115-.5069924-.9022703-.7555357-1.7296634-.7555357-.6720229.0009005-1.1652765.161193-1.50596779.488982v-.0027016zm2.12838449 12.4469783c-.160986.1557898-.3837456.2485433-.6224167.2485433-.3416273.001801-.6542396-.1891091-.7974422-.4862804-3.35356281-6.9159885-4.00873835-11.4275904-1.9533591-13.4051308.67857466-.6528766 1.6051801-.9833672 2.7508013-.9851682 1.8139002.0009005 2.7498653.837483 3.2150399 1.5407886 1.4619774 2.2071729.6476878 6.5296657-2.4157258 12.8477093-.0439903.0909525-.1038921.1728997-.1750254.2413392l-.001872-.001801z" id="flame"/>
-                                                <path d="M18.5004158 19.1617363c-.3051246 4.6917057-2.4700118 7.7696808-2.8565653 8.1415953-.0028079.0027015-.2630062.2440407-1.4348345.4385529-.8180334.1377795-1.8569546.2125226-2.9248907.2125226-1.0660642 0-2.10592139-.0756437-2.92208292-.2134231-1.17182824-.1936117-1.43202652-.4349509-1.43483441-.4376524-.3856176-.371014-2.55237669-3.4498896-2.8575013-8.1415953-.3640904-5.6138375 2.12838452-11.27270103 7.21722653-16.41106435C16.3767111 7.88903527 18.86825 13.5469982 18.5032237 19.1617363h-.0028079zm1.606116 13.1709958c-.5007413-1.4075118-1.3243905-3.0068341-2.678732-4.4782827.671087-.9356396 1.554638-2.5907941 2.1630153-4.730428 1.3693168 2.6124065 1.0492168 6.4125981.5129088 9.2105117l.0028079-.001801zm-17.64762097.0045026c-.53443605-2.7997147-.85640802-6.6008068.51758867-9.2141139.60650535 2.1405345 1.48912039 3.793888 2.16301522 4.7322291-1.35434142 1.4741502-2.17986259 3.0761741-2.68060389 4.4818848zM10.6617085.93972757C7.42888523 4.05012135 5.09646033 7.34692263 3.72807943 10.7436816c-1.12596595 2.8024161-1.60424409 5.6678686-1.41985898 8.5234154.03556668.5331075.09453247 1.0500056.16847371 1.5515949C1.47614753 21.920027.80318866 23.388774.47934475 25.1862106.20323506 26.7071878.17609207 28.4740067.3923 30.4371389c.36783426 3.3013038 1.29818352 6.0073644 1.33749405 6.1217304.1366509.3935269.54847552.6330651.97433962.5682277.18812897-.0297171.35660268-.116167.48295796-.2368366.15911406-.1539888.25739039-.3665114.25926232-.5988453-.00187193-.0099058.00935965-1.1472617.44926323-2.675443.36502636-1.2616276 1.09882296-3.0392527 2.5598644-4.6340725 1.40675547.5916412 3.74386022.6672848 4.82864372.6672848 1.0819756 0 3.4200163-.0747431 4.8239638-.6672848 1.4638494 1.5948198 2.19671 3.3724449 2.5608004 4.633172.4408395 1.5317834.4511351 2.6646367.4511351 2.6745424 0 .4160399.3135483.769944.7394124.837483.2882773.0432249.5700028-.0486281.7656194-.2368366.0945325-.091853.1684738-.2035174.2105922-.3313911.0393105-.114366.9696598-2.8204266 1.3346861-6.1217304.2199518-1.9640327.1909369-3.7290506-.0823649-5.2518288-.3266518-1.7983371-.9968028-3.2634821-1.9992213-4.3666182.0758131-.4988877.132907-1.0166864.1684737-1.5515949.1843851-2.8555468-.293893-5.7209993-1.419859-8.5234154-1.3683809-3.39495793-3.7017418-6.69536129-6.9326931-9.80395403l-.6233527-.59974588-.6224168.59974588h.0028079z" id="rocket"/>
-                                            </defs>
-                                            <use fill="#1C5A75" xlink:href="#rocket" id="ToTopRocket"/>
-                                            <use fill="#1C5A75" xlink:href="#window" id="ToTopRocketWindow"/>
-                                            <use fill="#FCAB10" xlink:href="#flame" id="ToTopRocketFlame"/>
-                                        </svg>
-                                    </span>
-                                    <span class="FooterScrollToTopText">Top</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="FooterMainInner">
-                        <div data-module="" class="Module StudyPortals_Shared_Modules_Footer_FooterAboutUs_FooterAboutUs">
-                            <div id="FooterAboutUs">
-                                <strong class="Header">About StudyAbroad</strong>
-                                <ul class="List">
-                                    <li class="ListItem">
-                                        <a href="https://studyportals.com/about-us/" class="Link" title="About Studyportals" target="_blank" rel="noopener"> About StudyAbroad </a>
-                                    </li>
-                                    <li class="ListItem">
-                                        <a href="https://studyportals.com/institutions/" class="Link" title="Our Marketing Services" target="_blank" rel="noopener"> Our Marketing Services </a>
-                                    </li>
-                                    <li class="ListItem">
-                                        <a href="https://studyportals.com/careers/" class="Link" title="Careers" target="_blank" rel="noopener"> Careers </a>
-                                    </li>
-                                    <li class="ListItem">
-                                        <a href="https://studyportals.com/contact/" class="Link" title="Contact us" target="_blank" rel="noopener"> Contact us </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div data-module="" class="Module StudyPortals_Shared_Modules_Footer_FooterOurPortals_FooterOurPortals">
-                            <nav id="FooterOurPortals">
-                                <strong class="Header">Our websites</strong>
-                                <ul class="List">
-                                    <li class="ListItem">
-                                        <a href="https://www.bachelorsportal.com/?redirect=false" class="Link" title="Bachelorsportal.com" target="BachelorsPortal" rel="noopener">Bachelorsportal</a>
-                                    </li>
-                                    <li class="ListItem">
-                                        <a href="https://www.mastersportal.com/?redirect=false" class="Link" title="Mastersportal.com" target="MastersPortal" rel="noopener">Mastersportal</a>
-                                    </li>
-                                    <li class="ListItem">
-                                        <a href="https://www.phdportal.com/?redirect=false" class="Link" title="PhDportal.com" target="PhDPortal" rel="noopener">PhDportal</a>
-                                    </li>
-                                    <li class="ListItem">
-                                        <a href="https://www.distancelearningportal.com/?redirect=false" class="Link" title="DistanceLearningportal.com" target="DistanceLearningPortal" rel="noopener">DistanceLearningportal</a>
-                                    </li>
-                                    <li class="ListItem">
-                                        <a href="https://www.scholarshipportal.com/" class="Link" title="ScholarshipPortal.com" target="ScholarshipPortal" rel="noopener">Scholarshipportal</a>
-                                    </li>
-                                    <li class="ListItem">
-                                        <a href="https://www.shortcoursesportal.com/?redirect=false" class="Link" title="ShortCoursesportal.com" target="ShortCoursesPortal" rel="noopener">ShortCoursesportal</a>
-                                    </li>
-                                    <li class="ListItem">
-                                        <a href="https://admissiontestportal.com/" class="Link" title="AdmissionTestportal.com" target="AdmissionTestPortal" rel="noopener">AdmissionTestportal</a>
-                                    </li>
-                                    <li class="ListItem">
-                                        <a href="https://englishtestportal.com/" class="Link" title="EnglishTestportal.com" target="EnglishTestPortal" rel="noopener">EnglishTestportal</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div>
-                            <div data-module="" class="Module StudyPortals_Shared_Modules_Footer_FooterCurrency_FooterCurrency">
-                                <div id="FooterCurrency">
-                                    <strong class="Header">Nationality & currency</strong>
-                                    <button class="DriverButton TuitionPreferencesButton js-showTuitionPreferences" title="Select your currency and country">
-                                        <span class="LocationText js-locationText"></span>
-                                        <span class="CurrencyText" data-currency-text="Local"></span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div data-module="" class="Module StudyPortals_Shared_Modules_Footer_FooterSocialMediaIcons_FooterSocialMediaIcons">
-                                <nav id="FooterSocialMediaIcons">
-                                    <strong class="Header">Follow us</strong>
-                                    <ul class="List">
-                                        <li class="ListItem">
-                                            <a href="#" class="Link" target="_blank" rel="noopener" title="Like us on Facebook">
-                                                <i class="lnr-facebook SocialIcon"></i>
-                                            </a>
-                                        </li>
-                                        <li class="ListItem">
-                                            <a href="#" class="Link" target="_blank" rel="noopener" title="Connect to us on LinkedIn">
-                                                <i class="lnr-linkedin SocialIcon"></i>
-                                            </a>
-                                        </li>
-                                        <li class="ListItem">
-                                            <a href="#" class="Link" target="_blank" rel="noopener" title="Follow us on YouTube">
-                                                <i class="lnr-youtube SocialIcon"></i>
-                                            </a>
-                                        </li>
-                                        <li class="ListItem">
-                                            <a href="#" class="Link" target="_blank" rel="noopener" title="Follow us on Twitter">
-                                                <i class="lnr-twitter SocialIcon"></i>
-                                            </a>
-                                        </li>
-                                        <li class="ListItem">
-                                            <a href="#" class="Link" target="_blank" rel="noopener" title="Follow us on Instagram"> <i class="lnr-instagram SocialIcon"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div data-module="" class="Module StudyPortals_Shared_Modules_Footer_FooterAddToHomescreen_FooterAddToHomescreen">
-                                <div id="FooterAddToHomescreen">
-                                    <button id="AddToHomeScreen" class="DriverButton Link"> Add to home screen </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="FooterBranding">
-            <div class="col1 no-vertical-padding wrapped">
-                <div class="colblock FlexBranding">
-                    <div class="FooterLogo">
-                        <div data-module="" class="Module StudyPortals_Shared_Modules_Footer_FooterLogo_FooterLogo">
-                            <img src="/img/1.png" class="SPLogo" alt="Studyportals" style="width:120px !important; height:auto;" loading="lazy" >
-                        </div>
-                    </div>
-                    <div class="FooterDisclaimer">
-                        <div data-module="" class="Module StudyPortals_Shared_Modules_Footer_FooterDisclaimer_FooterDisclaimer">
-                            <div id="FooterDisclaimer">
-                                <ul class="LegalList">
-                                    <li class="LegalListItem">
-                                        <a href="https://studyportals.com/about-us/terms/" rel="noopener" class="LegalLink" title="Terms of use" target="_blank">Terms of Use</a>
-                                    </li>
-                                    <li class="LegalListItem">
-                                        <a href="https://studyportals.com/about-us/privacy-2/" rel="noopener" class="LegalLink" title="Privacy &amp; Cookie statement" target="_blank">Privacy &amp; Cookie statement</a>
-                                    </li>
-                                    <li class="LegalListItem">
-                                        <a href="https://studyportals.com/about-us/disclaimer/" rel="noopener" class="LegalLink" title="Disclaimer" target="_blank">Disclaimer</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </footer>
+    
 </div> <div id="Internal">
     <div data-module="" class="Module StudyPortals_Shared_Modules_Login_AuthBase StudyPortals_Shared_Modules_Login_Auth">
         <div id="AuthPlaceholder"></div>

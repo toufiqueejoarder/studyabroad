@@ -45,7 +45,7 @@
             <div class="row justify-content-lg-end">
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header">{{ __('Post an Opportunity') }}</div>
+                        <div class="card-header">{{ __('Post a Program') }}</div>
 
                         <div class="card-body">
                             <form action="{{route('add.programs')}}" method="post" enctype="multipart/form-data">
@@ -56,14 +56,14 @@
                                         <label for="exampleInputEmail1" class="pr-3">Select Program: </label>
                                         <select class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" name="program">
                                             <div class="dropdown-menu">
-                                                <option value="">--Please choose an option--</option>
+                                                <option value="">Program Catagory</option>
                                                 @foreach($category as $row)
                                                     <option class="dropdown-item" value="{{$row->program_category}}">{{$row->program_category}}</option>
                                                 @endforeach
                                             </div>
                                         </select>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Enter Course Name Here" aria-label="Course Name" aria-describedby="basic-addon2" name="course">
+                                    <input type="text" class="form-control" placeholder="Enter Program Name Here" aria-label="Course Name" aria-describedby="basic-addon2" name="course">
                                 </div>
                                 <div class="form-group">
                                     <div class="input-group-prepend">

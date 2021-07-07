@@ -93,7 +93,9 @@ Route::post('/add-faculty', [App\Http\Controllers\DisciplineController::class, '
 
 //Student Routes
 Route::get('/Edit-Profile/{id}',[App\Http\Controllers\StudentController::class, 'editProfile'])->middleware('student');
+
 Route::post('/profile-update',[App\Http\Controllers\StudentController::class, 'updateProfile'])->name('update.Sprofile')->middleware('student');
+
 Route::get('/add-to-wishlist/{id}',[App\Http\Controllers\StudentController::class, 'addWishList'])->middleware('student');
 Route::get('/wish-List',[App\Http\Controllers\StudentController::class, 'viewWishList'])->middleware('student');
 Route::get('/applied-program',[App\Http\Controllers\StudentController::class, 'viewApplied'])->middleware('student');

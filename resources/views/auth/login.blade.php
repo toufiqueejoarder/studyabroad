@@ -13,8 +13,8 @@
                         <div class="form-group row">
                             <div class="col-md-6 offset-md-3">
                                 <a href="{{route('login.google')}}" class="btn btn-danger btn-block">Login With Google</a>
-                                <a href="{{route('login.facebook')}}" class="btn btn-info btn-block">Login With Facebook</a>
-                                <a href="{{route('login.linkedin')}}" class="btn btn-success btn-block">Login With Linkedin</a>
+                                
+                                
                             </div>
                         </div>
                         <p style="text-align: center">OR</p>

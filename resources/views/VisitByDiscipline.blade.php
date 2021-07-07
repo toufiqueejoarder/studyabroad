@@ -111,7 +111,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                            <button class="HelperButton"><span> Filter by continent </span></button></section>
+                                                            </section>
                                         </div>
                                     </div>
                                 </div>

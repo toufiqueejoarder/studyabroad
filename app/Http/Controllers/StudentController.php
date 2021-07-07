@@ -49,6 +49,7 @@ class StudentController extends Controller
         $data['name']=$request->name;
         $image1=$request->file('pImage');
         $old_link=$request->old_image;
+        
         if($image1) {
             $image1_name = Str::random(5);
             $ext1=strtolower($image1->getClientOriginalExtension());

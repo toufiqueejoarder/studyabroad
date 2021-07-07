@@ -173,7 +173,7 @@
                                 <li class="SectionNavigationItem" data-menu-section="decide">
                                     <a class="SectionNavigationLink js-SectionNavigationLink">
                                         <i class="SectionNavigationIcon lnr-archery"></i>
-                                        <span class="SectionNavigationLabel">Decide</span>
+                                        <span class="SectionNavigationLabel">Rankings</span>
                                     </a>
                                 </li>
                             </ul>
@@ -282,22 +282,7 @@
                                         <section class="SectionContentColumn SectionContentColumnRight">
                                             <div class="SubSectionContentTitle">Most popular countries</div>
                                             <ul class="SubSectionContentList">
-                                                <li class="SubSectionContentItem">
-                                                    <?php $country='Netherlands'?>
-                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-country/'.$country)}}" title="Netherlands">Netherlands</a>
-                                                </li>
-                                                <li class="SubSectionContentItem">
-                                                    <?php $country='France'?>
-                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-country/'.$country)}}"" title="France">France</a>
-                                                </li>
-                                                <li class="SubSectionContentItem">
-                                                    <?php $country='Germany'?>
-                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-country/'.$country)}}" title="Germany">Germany</a>
-                                                </li>
-                                                <li class="SubSectionContentItem">
-                                                    <?php $country='Norway'?>
-                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-country/'.$country)}}" title="Norway">Norway</a>
-                                                </li>
+                                                
                                                 <li class="SubSectionContentItem">
                                                     <?php $country='United Kingdom'?>
                                                     <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-country/'.$country)}}" title="United Kingdom">United Kingdom</a>
@@ -314,6 +299,10 @@
                                                     <?php $country='Australia'?>
                                                     <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-country/'.$country)}}" title="Australia">Australia</a>
                                                 </li>
+                                                <li class="SubSectionContentItem">
+                                                    <?php $country='Finland'?>
+                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-country/'.$country)}}" title="Finland">Finland</a>
+                                                </li>
                                             </ul>
                                             <a class="SubSectionViewAllLink" href="/countries/all" title="View all countries"> View all countries </a>
                                         </section>
@@ -322,43 +311,17 @@
                                 <li class="SectionNavigationItem" data-menu-section="decide">
                                     <a class="SectionNavigationLink js-SectionNavigationLink">
                                         <i class="SectionNavigationIcon lnr-archery"></i>
-                                        <span class="SectionNavigationLabel">Decide</span>
+                                        <span class="SectionNavigationLabel">Rankings</span>
                                     </a>
                                     <div class="SectionContent SectionContentDecide" data-menu-section="decide">
                                         <div class="SectionContentColumn SectionContentColumnFullWidth">
-                                            <div class="SubSectionContentTitle">Tools to help you decide</div>
-                                            <a href="/articles/2426/how-to-use-our-best-fit-tool" class="SubSectionCtaButton" title="Best Fit">
-                                                <i class="lnr-clipboard-check SubSectionCtaIcon"></i>
-                                                <span class="SubSectionCtaTitle">Best Fit</span>
-                                                <span class="SubSectionCtaDescription">Check your budget and academic fit with your study of choice</span>
-                                            </a>
-                                            <a href="/student-review" class="SubSectionCtaButton" title="Student Reviews">
-                                                <i class="lnr-reviews SubSectionCtaIcon"></i>
-                                                <span class="SubSectionCtaTitle">Student Reviews</span>
-                                                <span class="SubSectionCtaDescription">What are students saying about your chosen universities?</span>
-                                            </a>
-                                        </div>
+                                            
                                         <section class="SectionContentColumn SectionContentColumnFullWidth">
                                             <div class="SubSectionContentTitle">
                                                 University rankings per country
                                             </div>
                                             <ul class="SubSectionContentList SubSectionContentListTwoColumns">
-                                                <li class="SubSectionContentItem">
-                                                    <?php $country='Netherlands'?>
-                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-Ranked-University/'.$country)}}"> Netherlands </a>
-                                                </li>
-                                                <li class="SubSectionContentItem">
-                                                    <?php $country='France'?>
-                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-Ranked-University/'.$country)}}"> France </a>
-                                                </li>
-                                                <li class="SubSectionContentItem">
-                                                    <?php $country='Germany'?>
-                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-Ranked-University/'.$country)}}"> Germany </a>
-                                                </li>
-                                                <li class="SubSectionContentItem">
-                                                    <?php $country='Norway'?>
-                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-Ranked-University/'.$country)}}"> Norway </a>
-                                                </li>
+                                                
                                                 <li class="SubSectionContentItem">
                                                     <?php $country='United Kingdom'?>
                                                     <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-Ranked-University/'.$country)}}"> United Kingdom </a>
@@ -374,6 +337,10 @@
                                                 <li class="SubSectionContentItem">
                                                     <?php $country='Australia'?>
                                                     <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-Ranked-University/'.$country)}}"> Australia </a>
+                                                </li>
+                                                <li class="SubSectionContentItem">
+                                                    <?php $country='Finland'?>
+                                                    <a class="ContentItemLink js-ContentItemLink" href="{{URL::to('/search-Ranked-University/'.$country)}}"> Finland </a>
                                                 </li>
                                             </ul>
                                         </section>
@@ -427,8 +394,8 @@
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenu2" style="padding: 1rem 2rem; height: auto; box-sizing: border-box; border-radius: 0 0 5px 5px; font-size: .8125rem; line-height: 1rem; background: #fff;">
                                             <p style="display: block; margin: 0 0 1rem; font-size: .8125rem; line-height: 1rem; color: black;text-align: center;">Free access to all our programmes and services</p>
                                             <div class="dropdown-item" type="button" style="background-color: #4285f4; padding:3px 15px 3px; color: #FFFFFF; margin: auto;"><a href="{{route('login.google')}}" style="display: flex;"><i class="fa fa-google-plus-square"  style="font-size:45px;color: #FFFFFF;margin: 1px 14px 1px; "></i><p style="font-size: 20px; float: right; margin-top: 9px; margin-left: 9px; color: white;">Login With Google</p></a></div>
-                                            <div class="dropdown-item" type="button" style="background-color: #4267b2; padding:0px 15px 0px; color: #FFFFFF; margin-top: 5px;"><a href="{{route('login.facebook')}}" style="display: flex;"><i class="fa fa-facebook-official" style="font-size:45px;color: #FFFFFF;margin: 1px 14px 1px; "></i><p style="font-size: 20px; float: right; margin-top: 9px; margin-left: 9px; color: white;">Login With Facebook</p></a></div>
-                                            <div class="dropdown-item" type="button" style="background-color: #ffffff; padding:0px 15px 0px; color: #FFFFFF; margin-top: 5px; border: 1px dashed black;"><a href="/login"><i class="fa fa-envelope" style="font-size:45px;color: black;margin: 1px 14px 1px; "><p style="font-size: 23px;
+                                            <div class="dropdown-item" type="button" style="background-color: #4267b2; padding:0px 15px 0px; color: #FFFFFF; margin-top: 5px;"></div>
+                                            <div class="dropdown-item" type="button" style="background-color: #ffffff; padding:0px 0px 0px; color: #FFFFFF; margin-top: 5px; border: 1px dashed black;"><a href="/login"><i class="fa fa-envelope" style="font-size:45px;color: black;margin: 1px 14px 1px; "><p style="font-size: 23px;
             float: right;
             margin-top: 9px;
           margin-left: 19px;">Login With Email</p></i></a></div>
@@ -712,45 +679,7 @@
                     <div id="CountrySpotlight">
                         <h2>Where to study abroad?</h2>
                         <div id="CountrySpotlightContainer">
-                            <figure data-clickable="clickable">
-                                <a href="/search-country/Netherlands" title="Netherlands">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/mp/fce406d2.jpg" data-title="Netherlands" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/mp/fce406d2.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/mp/fce406d2.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/mp/fce406d2.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/mp/fce406d2.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/mp/fce406d2.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Netherlands" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Netherlands </span>
-                                    <div class="Toggle"> Study abroad in the Netherlands (also known as Holland), the first non-English-speaking
-                                        country to offer Bachelor’s and Master’s degrees taught in English. International
-                                        students in the Netherlands love the country because of its tolerant and
-                                        inclusive policies. Choose to study in the Netherlands at some of the best
-                                        universities and colleges in Europe.
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/search-country/Czech Republic" title="Czech Republic">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/endor/countries/7/images/1603188237_canva_aerial-view-of-concrete-bridge-and-buildings-surrounded-by-trees.jpg" data-title="Czech Republic" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/endor/countries/7/images/1603188237_canva_aerial-view-of-concrete-bridge-and-buildings-surrounded-by-trees.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/endor/countries/7/images/1603188237_canva_aerial-view-of-concrete-bridge-and-buildings-surrounded-by-trees.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/endor/countries/7/images/1603188237_canva_aerial-view-of-concrete-bridge-and-buildings-surrounded-by-trees.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/endor/countries/7/images/1603188237_canva_aerial-view-of-concrete-bridge-and-buildings-surrounded-by-trees.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/endor/countries/7/images/1603188237_canva_aerial-view-of-concrete-bridge-and-buildings-surrounded-by-trees.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Czech Republic" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Czech Republic </span>
-                                    <div class="Toggle"> Czech Republic is the country with the highest human development in Central and Eastern Europe and has ranked as the third most peaceful country in Europe. Member of the European Union since 2004, the Czech Republic has the Czech koruna as a currency and the beautiful city of Prague as capital. </div>
-                                </figcaption>
-                            </figure>
+                            
                             <figure data-clickable="clickable">
                                 <a href="/search-country/Finland" title="Finland">
                                     <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/mp/fa950397.jpg" data-title="Finland" >
@@ -770,131 +699,8 @@
                                         inexpensive or tuition-free degrees to study in Finland. </div>
                                 </figcaption>
                             </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/search-country/Ireland" title="Ireland">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/mp/79230930.jpg" data-title="Ireland" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/mp/79230930.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/mp/79230930.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/mp/79230930.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/mp/79230930.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/mp/79230930.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Ireland" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Ireland </span>
-                                    <div class="Toggle"> Study abroad in Ireland, the place where literature meets beautiful landscape, innovation and
-                                        a welcoming international climate. By studying in Ireland, you will enjoy the most
-                                        welcoming countries in the world and benefit from lots of opportunities in
-                                        education and research.
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/search-country/Norway" title="Norway">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/mp/5ca0a6d4.jpg" data-title="Norway" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/mp/5ca0a6d4.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/mp/5ca0a6d4.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/mp/5ca0a6d4.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/mp/5ca0a6d4.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/mp/5ca0a6d4.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Norway" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Norway </span>
-                                    <div class="Toggle"> Study abroad in Norway, the country that is consistently ranked by the UN as having the highest
-                                        standard of living in the world based largely on average levels of education
-                                        and income. Higher studies in Norway are some of the best in Europe. International
-                                        students have plenty of English-taught degrees to choose from at universities and
-                                        colleges in Norway. </div>
-                                </figcaption>
-                            </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/search-country/Poland" title="Poland">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/mp/0b5078c3.jpg" data-title="Poland" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/mp/0b5078c3.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/mp/0b5078c3.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/mp/0b5078c3.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/mp/0b5078c3.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/mp/0b5078c3.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Poland" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Poland </span>
-                                    <div class="Toggle"> Studying in Poland will provide a solid education which will thoroughly prepare you for work in the most advanced labour markets of the world, at the same time stimulating your own personal development. You will also have the unique opportunity of meeting outstanding specialists and renowned intellectuals in your chosen field.
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/search-country/Sweden" title="Sweden">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/endor/countries/26/images/1511346224_sweden%20cover%20image.jpg" data-title="Sweden" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/endor/countries/26/images/1511346224_sweden%20cover%20image.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/endor/countries/26/images/1511346224_sweden%20cover%20image.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/endor/countries/26/images/1511346224_sweden%20cover%20image.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/endor/countries/26/images/1511346224_sweden%20cover%20image.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/endor/countries/26/images/1511346224_sweden%20cover%20image.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Sweden" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Sweden </span>
-                                    <div class="Toggle"> Study in Sweden to learn how to conduct top-quality research and develop independent thinking.
-                                        People who study abroad in Sweden benefit from integration in a multicultural
-                                        society and rigorous Bachelor’s and Master’s degrees at universities and
-                                        colleges that look towards the future.
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/search-country/Switzerland" title="Switzerland">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/endor/countries/27/images/1511346964_Switzerland.jpg" data-title="Switzerland" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/endor/countries/27/images/1511346964_Switzerland.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/endor/countries/27/images/1511346964_Switzerland.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/endor/countries/27/images/1511346964_Switzerland.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/endor/countries/27/images/1511346964_Switzerland.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/endor/countries/27/images/1511346964_Switzerland.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Switzerland" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Switzerland </span>
-                                    <div class="Toggle"> Study abroad in Switzerland is a federal Republic in western Europe with one of the highest
-                                        standards of living. You can study in Switzerland in English even if the
-                                        country has four official languages: German (predominant), French, Italian and
-                                        Romansh. Switzerland is well known for its quality postgraduate studies, but
-                                        you can also find great Bachelor’s and Master’s degree options.
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/search-country/United Kingdom" title="United Kingdom">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/mp/d3369e27.jpg" data-title="United Kingdom" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/mp/d3369e27.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/mp/d3369e27.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/mp/d3369e27.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/mp/d3369e27.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/mp/d3369e27.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="United Kingdom" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> United Kingdom </span>
-                                    <div class="Toggle"> Study in the UK and feel like you have entered a modern-day fairy tale. Universities and
-                                        colleges in the UK - as well as the outstanding facilities they provide - are
-                                        mesmerizing for international students. All the modern universities in the
-                                        United Kingdom enable you to engage in ground-breaking research, regardless if
-                                        you study in Britain, Scotland, Wales or Northern Ireland.
-                                    </div>
-                                </figcaption>
-                            </figure>
+                            
+                                    
                             <figure data-clickable="clickable">
                                 <a href="/search-country/Canada" title="Canada">
                                     <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/endor/countries/56/images/1546950707_Canada.jpg" data-title="Canada" >
@@ -940,30 +746,7 @@
                                     </div>
                                 </figcaption>
                             </figure>
-                            <figure data-clickable="clickable">
-                                <a href="/search-country/Israel" title="Israel">
-                                    <span class="Picture" data-file-url="//storage-prtl-co.imgix.net/endor/countries/112/images/1584971992_cover.jpg" data-title="Israel" >
-                                        <picture>
-                                            <source media="all and (max-width: 30em)" srcset="//storage-prtl-co.imgix.net/endor/countries/112/images/1584971992_cover.jpg?w=231&h=154&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 30.063em) and (max-width: 48em)" srcset="//storage-prtl-co.imgix.net/endor/countries/112/images/1584971992_cover.jpg?w=359&h=243&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 48.063em) and (max-width: 80em)" srcset="//storage-prtl-co.imgix.net/endor/countries/112/images/1584971992_cover.jpg?w=410&h=273&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <source media="all and (min-width: 80.063em)" srcset="//storage-prtl-co.imgix.net/endor/countries/112/images/1584971992_cover.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40">
-                                            <img src="//storage-prtl-co.imgix.net/endor/countries/112/images/1584971992_cover.jpg?w=224&h=150&fit=crop&crop=entropy&auto=format,compress&q=40" alt="Israel" loading="lazy" width="143" height="95" >
-                                        </picture>
-                                    </span>
-                                </a>
-                                <figcaption>
-                                    <span> Israel </span>
-                                    <div class="Toggle"> Study abroad
-                                        in Israel and explore iconic sites for European and Middle-Eastern culture.
-                                        Universities and study centres in Israel offer international students
-                                        English-taught Bachelor’s and Master’s degrees. Study in Israel, also known as
-                                        the “Start-Up Nation”, with
-                                        the world’s highest investment per capita in start-up companies. Israel was
-                                        ranked the 3rd most innovative country in the world.
-                                    </div>
-                                </figcaption>
-                            </figure>
+                            
                         </div>
                         <div class="ViewAll">
                             <a href="/countries/all" title="View all countries">View all countries</a>
@@ -1088,11 +871,7 @@
                                     </ul>
                                 </nav>
                             </div>
-                            <div data-module="" class="Module StudyPortals_Shared_Modules_Footer_FooterAddToHomescreen_FooterAddToHomescreen">
-                                <div id="FooterAddToHomescreen">
-                                    <button id="AddToHomeScreen" class="DriverButton Link"> Add to home screen </button>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -1102,22 +881,20 @@
             <div class="col1 no-vertical-padding wrapped">
                 <div class="colblock FlexBranding">
                     <div class="FooterLogo">
-                        <div data-module="" class="Module StudyPortals_Shared_Modules_Footer_FooterLogo_FooterLogo">
-                            <img src="img/1.png" class="SPLogo" alt="Studyportals" style="width:120px !important; height:auto;" loading="lazy" >
-                        </div>
+                        
                     </div>
                     <div class="FooterDisclaimer">
                         <div data-module="" class="Module StudyPortals_Shared_Modules_Footer_FooterDisclaimer_FooterDisclaimer">
-                            <div id="FooterDisclaimer">
+                            <div id="FooterDisclaimer"> 
                                 <ul class="LegalList">
                                     <li class="LegalListItem">
-                                        <a href="https://studyportals.com/about-us/terms/" rel="noopener" class="LegalLink" title="Terms of use" target="_blank">Terms of Use</a>
+                                        @COPYRIGHT BY CSE499B; STUDY ABROAD TEAM
                                     </li>
                                     <li class="LegalListItem">
-                                        <a href="https://studyportals.com/about-us/privacy-2/" rel="noopener" class="LegalLink" title="Privacy &amp; Cookie statement" target="_blank">Privacy &amp; Cookie statement</a>
+                                        
                                     </li>
                                     <li class="LegalListItem">
-                                        <a href="https://studyportals.com/about-us/disclaimer/" rel="noopener" class="LegalLink" title="Disclaimer" target="_blank">Disclaimer</a>
+                                        
                                     </li>
                                 </ul>
                             </div>

@@ -19,11 +19,7 @@
                     <i class="fa fa-users" aria-hidden="true"></i> Universities
                 </a>
             </li>
-            <li>
-                <a href="/discipline-list">
-                    <i class="fa fa-list" aria-hidden="true"></i> Disciplines
-                </a>
-            </li>
+            
             <li>
                 <a href="/manage-country">
                     <i class="fa fa-flag" aria-hidden="true"></i> Manage Country
@@ -44,8 +40,8 @@
             <h5>Email: {{$user->email}}</h5>
             <h5>Address: {{$uni->address}},{{$uni->address2}},{{$uni->state}},{{$uni->provience}},{{$uni->country}}</h5>
             <h5>Website: {{$uni->website}}</h5>
-            <h4>No. of Posts: {{$x}}</h4>
-            <h5>Posts:</h5>
+            <h4>No. of Programs: {{$x}}</h4>
+            <h5>Programs:</h5>
             <table class="table table-striped css-serial">
                 <thead>
                 <tr>

@@ -19,11 +19,7 @@
                     <i class="fa fa-users" aria-hidden="true"></i> Universities
                 </a>
             </li>
-            <li>
-                <a href="/discipline-list">
-                    <i class="fa fa-list" aria-hidden="true"></i> Disciplines
-                </a>
-            </li>
+           
             <li>
                 <a href="/manage-country">
                     <i class="fa fa-flag" aria-hidden="true"></i> Manage Country

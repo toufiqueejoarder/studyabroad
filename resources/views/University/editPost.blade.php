@@ -45,7 +45,7 @@
             <div class="row justify-content-lg-center">
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header">{{ __('Post an Opportunity') }}</div>
+                        <div class="card-header">{{ __('Post a Program') }}</div>
 
                         <div class="card-body">
                             <form action="{{url('/program/update/'.$post->id)}}" method="post" enctype="multipart/form-data">

@@ -94,8 +94,17 @@ class ProgramController extends Controller
         $universityName=DB::table('universities')->where('country', 'LIKE', '%'.$country.'%')->get();
 
         $htapply=DB::table('htapplys')->where('country', 'LIKE', '%'.$country.'%')->first();
+        $opht1=nl2br($htapply->notes);
+        $htNotes = explode('<br />', $opht1);
+        $opht2=nl2br($htapply->documents);
+        $htDocs = explode('<br />', $opht2);
+        $opht3=nl2br($htapply->englishskill);
+        $htSkills = explode('<br />', $opht3);
+        $opht4=nl2br($htapply->deadlines);
+        $htDead = explode('<br />', $opht4);
+
         return view('viewByCountry', compact('study','living', 'htapply', 'about', 'stdvisa', 'workp', 'unis','Snotes','Swhystdy', 'Sliketo', 'Swtto', 'Smjcity',
-        'Swcuniat', 'Spinfo', 'Swtql', 'Lnotes', 'Ltutnfees','Lvngc','Aboutn','SVisa','WorkP','universityName'));
+        'Swcuniat', 'Spinfo', 'Swtql', 'Lnotes', 'Ltutnfees','Lvngc','Aboutn','SVisa','WorkP','universityName', 'htNotes', 'htDocs', 'htDead', 'htSkills'));
     }
 
     public function viewRnkdinCountry($country){
